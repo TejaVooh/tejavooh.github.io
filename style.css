@@ -1,76 +1,99 @@
+/* Reset and base */
 body {
-    background: #000;
-    color: #33ff33;
-    font-family: 'Courier New', Courier, monospace;
     margin: 0;
-    padding: 1rem;
+    padding: 0;
+    background-color: #000;
+    color: #00ff00;
+    font-family: 'Courier New', Courier, monospace;
+    height: 100vh;
+    overflow: hidden;
   }
   
-  #terminal {
-    max-width: 800px;
-    margin: 0 auto;
-  }
-  
-  #output {
-    white-space: pre-wrap;
-    margin-bottom: 1rem;
-  }
-  
-  .input-line {
+  .container {
     display: flex;
+    flex-direction: column;
     align-items: center;
-  }
-  
-  .input-line span {
-    margin-right: 0.5rem;
-  }
-  
-  input {
-    background: transparent;
-    border: none;
-    color: inherit;
-    font: inherit;
-    outline: none;
-    width: 100%;
-    caret-color: #33ff33;
-  }
-  
-  .centered-container {
-    position: absolute;
-    top: 65%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    justify-content: center;
+    height: 100vh;
+    padding: 2rem;
+    box-sizing: border-box;
     text-align: center;
   }
-
-  .social-icons a {
-    width: 40px;
-  height: 40px;
-  margin: 0 12px;
-  stroke: #00ff00;
-  fill: none;
-  transition: transform 0.2s ease;
+  
+  /* Social Icons */
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 2rem;
   }
   
-  .social-icons a:hover {
-    transform: scale(1.1);
-    stroke: #00ff88;
+  .icon {
+    width: 48px;
+    height: 48px;
+    transition: transform 0.3s;
   }
   
+  .icon:hover {
+    transform: scale(1.2);
+  }
+  
+  /* Typewriter message */
   .typewriter {
-    font-family: 'Courier New', Courier, monospace;
-    color: #00ff00;
     font-size: 1.2rem;
-    margin-top: 1rem;
-    min-height: 1.5rem;
+    margin-bottom: 2rem;
     white-space: nowrap;
     overflow: hidden;
     border-right: 0.15em solid #00ff00;
-    animation: blinkCaret 0.75s step-end infinite;
+    width: fit-content;
+    animation: blink-caret 0.75s step-end infinite;
   }
   
-  @keyframes blinkCaret {
-    from, to { border-color: transparent; }
-    50% { border-color: #00ff00; }
+  /* Terminal */
+  .terminal {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 800px;
+    align-items: flex-start;
+  }
+  
+  .output {
+    text-align: left;
+    width: 100%;
+    margin-bottom: 1rem;
+    overflow-y: auto;
+    max-height: 300px;
+    padding-right: 10px;
+  }
+  
+  .prompt-line {
+    display: flex;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .prompt {
+    margin-right: 0.5rem;
+  }
+  
+  input[type="text"] {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: #00ff00;
+    font-family: inherit;
+    font-size: 1rem;
+    width: 100%;
+  }
+  
+  /* Animations */
+  @keyframes blink-caret {
+    from, to {
+      border-color: transparent;
+    }
+    50% {
+      border-color: #00ff00;
+    }
   }
   
