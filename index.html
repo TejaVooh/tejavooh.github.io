@@ -3,37 +3,18 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>TejaVooh Terminal</title>
+  <title>tejavooh</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="container">
+  <div class="terminal">
     <div class="social-icons">
       <a href="https://github.com/TejaVooh" target="_blank" aria-label="GitHub">
         <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="#00ff00" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-          <path d="M12 1C5.925 1 1 5.925 1 12c0 4.867 3.159 8.993 7.547 10.443.552.101.753-.24.753-.533 
-          0-.263-.01-1.144-.015-2.075-3.072.669-3.719-1.48-3.719-1.48-.502-1.276-1.227-1.617-1.227-1.617-.996-.682.075-.668.075-.668 
-          1.102.078 1.68 1.132 1.68 1.132.979 1.676 2.566 1.191 3.19.911.099-.71.383-1.192.697-1.466-2.452-.278-5.03-1.226-5.03-5.456 
-          0-1.204.43-2.187 1.132-2.958-.114-.278-.491-1.397.107-2.91 0 0 .924-.296 3.027 1.128a10.54 10.54 0 0 1 2.756-.37c.935.004 
-          1.876.126 2.756.37 2.102-1.424 3.024-1.128 3.024-1.128.6 1.513.223 2.632.11 2.91.705.77 1.13 1.754 1.13 2.958 
-          0 4.242-2.582 5.173-5.04 5.446.392.337.743.998.743 2.012 0 1.454-.014 2.627-.014 2.986 
-          0 .295.197.638.76.53C19.84 20.988 23 16.867 23 12c0-6.075-4.925-11-11-11z"/>
+          <path d="M12 1C5.925 1 1 5.925 1 12c0 4.867 3.159 8.993 7.547 10.443.552.101.753-.24.753-.533 0-.263-.01-1.144-.015-2.075-3.072.669-3.719-1.48-3.719-1.48-.502-1.276-1.227-1.617-1.227-1.617-.996-.682.075-.668.075-.668 1.102.078 1.68 1.132 1.68 1.132.979 1.676 2.566 1.191 3.19.911.099-.71.383-1.192.697-1.466-2.452-.278-5.03-1.226-5.03-5.456 0-1.204.43-2.187 1.132-2.958-.114-.278-.491-1.397.107-2.91 0 0 .924-.296 3.027 1.128a10.54 10.54 0 0 1 2.756-.37c.935.004 1.876.126 2.756.37 2.102-1.424 3.024-1.128 3.024-1.128.6 1.513.223 2.632.11 2.91.705.77 1.13 1.754 1.13 2.958 0 4.242-2.582 5.173-5.04 5.446.392.337.743.998.743 2.012 0 1.454-.014 2.627-.014 2.986 0 .295.197.638.76.53C19.84 20.988 23 16.867 23 12c0-6.075-4.925-11-11-11z"/>
         </svg>
       </a>
-
-      <a href="https://medium.com/@TejaVooh" target="_blank" aria-label="Medium">
-        <svg class="icon" viewBox="0 0 1043.63 592.71" fill="#00ff00">
-          <g>
-            <path d="M588.67 296.18c0 163.5-131.54 296.17-294.34 296.17S0 459.68 0 296.18 
-            131.54 0 294.33 0s294.34 132.67 294.34 296.18zM792.54 296.18c0 153.13-65.56 
-            277.31-146.38 277.31S499.79 449.31 499.79 296.18 565.36 18.87 646.17 
-            18.87s146.37 124.18 146.37 277.31zM1043.63 296.18c0 144.67-26.53 261.96-59.25 
-            261.96s-59.25-117.29-59.25-261.96 26.53-261.96 59.25-261.96 
-            59.25 117.29 59.25 261.96z"/>
-          </g>
-        </svg>
-      </a>
-
+    
       <a href="https://linkedin.com/in/tejavooh" target="_blank" aria-label="LinkedIn">
         <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="#00ff00" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
           <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/>
@@ -43,17 +24,13 @@
       </a>
     </div>
 
-    <div id="typewriter-message" class="typewriter"></div>
+    <div class="output">
+      <span class="green">commands:</span> about, skills, blog
+    </div>
 
-    <div class="terminal">
-      <div id="output" class="output"></div>
-      <div class="prompt-line">
-        <span class="prompt">~ $</span>
-        <input type="text" id="input" autocomplete="off" autofocus />
-      </div>
+    <div class="prompt-line">
+      <span class="green">~$</span><span class="cursor">|</span>
     </div>
   </div>
-
-  <script src="terminal.js"></script>
 </body>
 </html>
