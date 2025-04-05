@@ -50,41 +50,38 @@ body {
   }
   
   /* Terminal */
-  .terminal {
+  .terminal-container {
     display: flex;
     flex-direction: column;
-    width: 100%;
-    max-width: 800px;
-    align-items: flex-start;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
   }
   
-  .output {
-    text-align: left;
-    width: 100%;
-    margin-bottom: 1rem;
-    overflow-y: auto;
-    max-height: 300px;
-    padding-right: 10px;
+  #output {
+    color: #00ff00;
+    font-family: 'Courier New', monospace;
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    text-align: center;
   }
   
   .prompt-line {
     display: flex;
     align-items: center;
-    width: 100%;
+    justify-content: center;
+    color: #00ff00;
+    font-family: 'Courier New', monospace;
   }
   
-  .prompt {
-    margin-right: 0.5rem;
-  }
-  
-  input[type="text"] {
-    background-color: transparent;
+  .prompt-line input {
+    background: transparent;
     border: none;
-    outline: none;
     color: #00ff00;
     font-family: inherit;
-    font-size: 1rem;
-    width: 100%;
+    font-size: 1.2em;
+    outline: none;
+    width: 300px;
   }
   
   /* Animations */
