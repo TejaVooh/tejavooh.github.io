@@ -29,7 +29,7 @@ Then open [http://127.0.0.1:8080](http://127.0.0.1:8080)
 ## Deployment
 This repo is automatically deployed from the `main` branch via GitHub Pages.
 
-## 🔄 Versioning
+## Versioning
 - `main`: production/live site
 - `dev`: ongoing development
 - `feature/*`: feature-specific branches
