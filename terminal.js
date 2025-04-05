@@ -2,9 +2,10 @@ const input = document.getElementById("input");
 const output = document.getElementById("output");
 
 const commands = {
+  help: "Available commands: help, about, skills, blog, clear",
   about: "I'm Teja – I build scalable platforms and love integrating AI into dev workflows.",
   skills: "Platform Engineering, Automation, AI Integration, Security, DevOps, Docs as Code",
-  blog: "Coming soon: My thoughts on AI, automation, and building developer-first products.",
+  blog: "Check out my writing on Medium: https://medium.com/@TejaVooh",
   clear: () => output.innerHTML = "",
 };
 
@@ -51,7 +52,6 @@ function typewriterEffect(element, text, speed = 75) {
 document.addEventListener("DOMContentLoaded", () => {
   const typewriterEl = document.getElementById("typewriter-message");
   if (typewriterEl) {
-    typewriterEl.textContent = ""; // Clear default text before animation
     typewriterEffect(typewriterEl, "commands: about, skills, blog");
   }
 });
