@@ -1,96 +1,68 @@
-/* Reset and base */
 body {
-    margin: 0;
-    padding: 0;
-    background-color: #000;
+    background-color: black;
     color: #00ff00;
     font-family: 'Courier New', Courier, monospace;
+    margin: 0;
     height: 100vh;
     overflow: hidden;
-  }
-  
-  .container {
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100vh;
-    padding: 2rem;
-    box-sizing: border-box;
-    text-align: center;
   }
   
-  /* Social Icons */
-  .social-icons {
+  .terminal {
+    width: 100%;
+    height: 100%;
+    padding: 2rem;
+    box-sizing: border-box;
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    gap: 2rem;
-    margin-bottom: 2rem;
+    position: relative;
+  }
+  
+  .social-icons {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  
+  .social-icons a {
+    margin: 0 1.2rem;
   }
   
   .icon {
-    width: 48px;
-    height: 48px;
-    transition: transform 0.3s;
+    width: 2.2rem;
+    height: 2.2rem;
+    vertical-align: middle;
   }
   
-  .icon:hover {
-    transform: scale(1.2);
-  }
-  
-  /* Typewriter message */
-  .typewriter {
-    font-size: 1.2rem;
-    margin-bottom: 2rem;
-    white-space: nowrap;
-    overflow: hidden;
-    border-right: 0.15em solid #00ff00;
-    width: fit-content;
-    animation: blink-caret 0.75s step-end infinite;
-  }
-  
-  /* Terminal */
-  .terminal-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-  }
-  
-  #output {
-    color: #00ff00;
-    font-family: 'Courier New', monospace;
-    font-size: 1.2em;
-    margin-bottom: 20px;
+  .output {
     text-align: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 3rem;
   }
   
   .prompt-line {
+    position: absolute;
+    bottom: 2rem;
+    left: 2rem;
+    font-size: 1rem;
     display: flex;
     align-items: center;
-    justify-content: center;
-    color: #00ff00;
-    font-family: 'Courier New', monospace;
   }
   
-  .prompt-line input {
-    background: transparent;
-    border: none;
+  .green {
     color: #00ff00;
-    font-family: inherit;
-    font-size: 1.2em;
-    outline: none;
-    width: 300px;
   }
   
-  /* Animations */
-  @keyframes blink-caret {
-    from, to {
-      border-color: transparent;
-    }
-    50% {
-      border-color: #00ff00;
-    }
+  .cursor {
+    display: inline-block;
+    width: 1ch;
+    animation: blink 1s step-start infinite;
+  }
+  
+  @keyframes blink {
+    50% { opacity: 0; }
   }
   
