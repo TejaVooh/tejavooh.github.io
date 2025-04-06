@@ -33,7 +33,10 @@ input.addEventListener("keydown", function (e) {
       }
     }
     input.value = "";
-    window.scrollTo(0, document.body.scrollHeight);
+    window.scrollTo({
+      top: document.body.scrollHeight,
+      behavior: 'smooth'
+    });
   }
 });
 
@@ -56,7 +59,7 @@ function typewriterEffect(element, fullText, speed = 50, lineDelay = 800) {
         setTimeout(typeChar, speed);
       } else {
         currentLine++;
-        setTimeout(typeLine, lineDelay); // Delay before next line starts
+        setTimeout(typeLine, lineDelay);
       }
     }
 
@@ -65,7 +68,6 @@ function typewriterEffect(element, fullText, speed = 50, lineDelay = 800) {
 
   typeLine();
 }
-
 
 document.addEventListener("DOMContentLoaded", () => {
   const cmdEl = document.getElementById("typewriter-message");
@@ -82,7 +84,20 @@ document.addEventListener("DOMContentLoaded", () => {
       35
     );
   }
-});
-document.addEventListener("contextmenu", function (e) {
-  e.preventDefault();
+
+  // Disable right-click
+  document.addEventListener("contextmenu", function (e) {
+    e.preventDefault();
+  });
+
+  // Disable F12 / Ctrl+Shift+I / Cmd+Opt+I
+  document.addEventListener("keydown", function (e) {
+    if (
+      e.key === "F12" ||
+      (e.ctrlKey && e.shiftKey && e.key === "I") || // Windows/Linux
+      (e.metaKey && e.altKey && e.key.toLowerCase() === "i") // Mac
+    ) {
+      e.preventDefault();
+    }
+  });
 });
