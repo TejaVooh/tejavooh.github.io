@@ -99,8 +99,6 @@ body {
   height: 100px; /* Reserve space for the footer */
   width: 100%;
   position: relative;
-  margin-top: 83%;
-  margin-right: 50%;
 }
 
 .footer {
@@ -108,7 +106,7 @@ body {
   bottom: 0;
   width: 100%;
   text-align: center;
-  font-size: 0.8rem;
+  font-size: 0.2rem;
   font-style: italic;
   color: #00ff00;
   opacity: 0.8;
