@@ -50,8 +50,18 @@ function typewriterEffect(element, text, speed = 75) {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
-  const typewriterEl = document.getElementById("typewriter-message");
-  if (typewriterEl) {
-    typewriterEffect(typewriterEl, "commands: about, skills, clear");
+  const cmdEl = document.getElementById("typewriter-message");
+  const storyEl = document.getElementById("typewriter-story");
+
+  if (cmdEl) {
+    typewriterEffect(cmdEl, "commands: about, skills, clear");
+  }
+
+  if (storyEl) {
+    typewriterEffect(
+      storyEl,
+      "This is my second marriage with GitHub, hence TejaVooh. The first failed miserably. Apparently, I didn't commit enough. GH and I will create a family of useful repos hopefully this time.",
+      35
+    );
   }
 });
