@@ -98,7 +98,7 @@ body {
 .footer-wrapper {
   height: 100px; /* Reserve space for the footer */
   width: 100%;
-  position: relative;
+  position: absolute;
 }
 
 .footer {
