@@ -97,15 +97,11 @@ body {
 }
 
 .footer {
+  margin-top: auto;
   text-align: center;
-  top: 15px;
-  padding-top: 20px;
-  bottom: 10px;
-  left: 50%;
-  transform: translateX(-50%);
   font-size: 0.7rem;
   font-style: italic;
   color: #00ff00;
   opacity: 0.7;
-  pointer-events: none;
+  padding: 10px 0;
 }
