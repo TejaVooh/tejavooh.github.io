@@ -1,3 +1,4 @@
+/* === Base Styles === */
 body {
   margin: 0;
   background-color: black;
@@ -15,6 +16,7 @@ body {
   padding-top: 5vh;
 }
 
+/* === Terminal Output & Input === */
 #output {
   margin-bottom: 0.5rem;
   width: 80%;
@@ -41,6 +43,7 @@ body {
   width: 70vw;
 }
 
+/* === Typewriter Animation Text === */
 .typewriter {
   margin-bottom: 1rem;
   font-weight: bold;
@@ -55,17 +58,19 @@ body {
   margin-bottom: 2rem;
 }
 
-#typewriter-story {
-  font-size: 0.4rem;
+/* === Story Note Section === */
+.typewriter-story {
+  font-size: 0.8rem;
   font-style: italic;
   color: #00ff00;
   text-align: center;
   margin-bottom: 2rem;
-  max-width: 80%;
-  opacity: 0.9;
+  max-width: 600px;
+  opacity: 0.85;
   line-height: 1.5;
 }
 
+/* === Icons === */
 .icons {
   display: flex;
   justify-content: center;
