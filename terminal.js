@@ -78,7 +78,7 @@ document.addEventListener("DOMContentLoaded", () => {
   if (storyEl) {
     typewriterEffect(
       storyEl,
-      "This is my second marriage with GitHub. Hence TejaVooh. The first one failed miserably. Apparently, I didn't commit enough.",
+      "My second chance with GitHub. Hence TejaVooh. First one failed miserably. Apparently, I didn't commit enough.",
       35
     );
   }
