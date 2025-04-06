@@ -52,6 +52,6 @@ function typewriterEffect(element, text, speed = 75) {
 document.addEventListener("DOMContentLoaded", () => {
   const typewriterEl = document.getElementById("typewriter-message");
   if (typewriterEl) {
-    typewriterEffect(typewriterEl, "commands: about, skills, blog, clear");
+    typewriterEffect(typewriterEl, "commands: about, skills, clear");
   }
 });
