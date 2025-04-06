@@ -99,7 +99,7 @@ body {
 .footer {
   text-align: center;
   top: 15px;
-  margin-top:20px;
+  padding-top: 20px;
   bottom: 10px;
   left: 50%;
   transform: translateX(-50%);
