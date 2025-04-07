@@ -1,17 +1,18 @@
 window.addEventListener("DOMContentLoaded", () => {
     const statsBox = document.getElementById("visitor-stats");
-  
-    fetch("https://ipapi.co/json")
+
+    // Using GeoJS API (no API key required)
+    fetch("https://get.geojs.io/v1/ip/geo.json")
       .then(res => res.json())
       .then(data => {
         const ip = data.ip;
         const city = data.city;
-        const country = data.country_name;
+        const country = data.country;
         const lat = data.latitude;
         const lon = data.longitude;
         const ua = navigator.userAgent;
         const timestamp = new Date().toLocaleString();
-  
+
         const html = `
           <div><strong>Time:</strong> ${timestamp}</div>
           <div><strong>IP:</strong> ${ip}</div>
@@ -25,5 +26,4 @@ window.addEventListener("DOMContentLoaded", () => {
         statsBox.innerHTML = `<div style="color: red;">Failed to fetch visitor data.</div>`;
         console.error("Error fetching visitor info:", err);
       });
-  });
-  
+});
