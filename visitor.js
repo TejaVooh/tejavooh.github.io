@@ -15,3 +15,20 @@ fetch('https://ipapi.co/json')
     });
   })
   .catch(err => console.error("Visitor log failed:", err));
+
+  function updateConkyStats() {
+    fetch('https://tejanshu.com/logger/read_logs.php')
+      .then(res => res.json())
+      .then(logs => {
+        const panel = document.getElementById('conkyStats');
+        panel.innerHTML = logs.slice(0, 10).map(log =>
+          `${log.timestamp}\n${log.city}, ${log.country}\nIP: ${log.ip}\n`
+        ).join('\n----------------------\n');
+      })
+      .catch(err => console.error("Conky panel fetch failed:", err));
+  }
+  
+  // Update every 10 seconds
+  setInterval(updateConkyStats, 10000);
+  updateConkyStats(); // initial load
+  
