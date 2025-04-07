@@ -1,5 +1,5 @@
 window.addEventListener("DOMContentLoaded", () => {
-    const statsBox = document.getElementById("visitor-stats");
+    const statsBox = document.getElementById("conky-panel");
 
     // Using GeoJS API (no API key required)
     fetch("https://get.geojs.io/v1/ip/geo.json")
