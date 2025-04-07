@@ -1,5 +1,5 @@
 window.addEventListener("DOMContentLoaded", () => {
-    const statsBox = document.getElementById("conkyPanel");
+    const statsBox = document.getElementById("conkyPanel");  // Updated to match the HTML element ID
 
     // Using GeoJS API (no API key required)
     fetch("https://get.geojs.io/v1/ip/geo.json")
@@ -20,7 +20,7 @@ window.addEventListener("DOMContentLoaded", () => {
           <div><strong>Coords:</strong> ${lat}, ${lon}</div>
           <div><strong>User Agent:</strong><br><code style="font-size: 0.8em;">${ua}</code></div>
         `;
-        statsBox.innerHTML = html;
+        statsBox.innerHTML = html;  // Populate statsBox with visitor data
       })
       .catch(err => {
         statsBox.innerHTML = `<div style="color: red;">Failed to fetch visitor data.</div>`;
