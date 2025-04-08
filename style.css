@@ -41,7 +41,7 @@ body {
 #input {
   background: none;
   border: none;
-  color: #00ff00;
+  color: #ffffff;
   outline: none;
   font-family: inherit;
   font-size: inherit;
@@ -53,13 +53,13 @@ body {
   margin-bottom: 1rem;
   font-weight: bold;
   text-align: center;
-  color: #00ff00;
+  color: #ffffff;
 }
 
 #typewriter-message {
   text-align: center;
   font-weight: bold;
-  color: #00ff00;
+  color: #ffffff;
   margin-bottom: 2rem;
 }
 
@@ -67,7 +67,7 @@ body {
 .typewriter-story {
   font-size: 0.8rem; /* much more readable */
   font-style: italic;
-  color: #00ff00;
+  color: #ffffff;
   text-align: center;
   margin: 1rem auto 2rem auto;
   max-width: 600px;
@@ -109,7 +109,7 @@ body {
   text-align: center;
   font-size: 9px;
   font-style: italic;
-  color: #00ff00;
+  color: #ffffff;
   opacity: 0.8;
 }
 
@@ -125,7 +125,7 @@ body {
   width: 300px;
   max-height: 90vh;
   background-color: #000;
-  color: #00ff00;
+  color: #ffffff;
   font-family: monospace;
   font-size: 8px;
   padding: 10px;
