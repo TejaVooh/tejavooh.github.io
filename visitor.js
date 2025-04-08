@@ -6,8 +6,7 @@ window.addEventListener("DOMContentLoaded", () => {
       city: "--",
       country: "--",
       lat: "--",
-      lon: "--",
-      ua: navigator.userAgent
+      lon: "--"
     };
   
     function updateTimeAndRender() {
@@ -19,7 +18,6 @@ window.addEventListener("DOMContentLoaded", () => {
         <div><strong>IP:</strong> ${ip}</div>
         <div><strong>Location:</strong> ${city}, ${country}</div>
         <div><strong>Coords:</strong> ${lat}, ${lon}</div>
-        <div><strong>User Agent:</strong><br><code style="font-size: 0.8em;">${ua}</code></div>
       `;
       statsBox.innerHTML = html;
     }
