@@ -2,10 +2,16 @@ const input = document.getElementById("input");
 const output = document.getElementById("output");
 
 const commands = {
-  help: "Available commands: help, about, skills, blog, clear",
+  help: "Available commands: help, about, skills, blog, cv, clear",
   about: "I'm Teja – I build scalable platforms and love integrating AI into dev workflows.",
   skills: "Platform Engineering, Automation, AI Integration, Security, DevOps, Docs as Code",
   blog: "Check out my writing on Medium: https://medium.com/@TejaVooh",
+  cv: () => {
+    const msg = document.createElement("div");
+    msg.textContent = "Opening resume in new tab...";
+    output.appendChild(msg);
+    window.open("resume.pdf", "_blank");
+  },
   clear: () => output.innerHTML = "",
 };
 
