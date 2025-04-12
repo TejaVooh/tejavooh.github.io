@@ -1,6 +1,6 @@
 body.terminal-body {
     background-color: black;
-    color: #0f0;
+    color: #fff;
     font-family: monospace;
   }
   
@@ -8,20 +8,20 @@ body.terminal-body {
     max-width: 800px;
     margin: 4rem auto;
     padding: 1rem;
-    border-left: 2px solid #0f0;
-    border-right: 2px solid #0f0;
+    border-left: 2px solid #fff;
+    border-right: 2px solid #fff;
   }
   
   .blog-title {
     text-align: center;
     font-size: 2rem;
-    color: #9f9;
-    border-bottom: 1px solid #0f0;
+    color: #fff;
+    border-bottom: 1px solid #fff;
     margin-bottom: 2rem;
   }
   
   .blog-post h2, .blog-post h3 {
-    color: #0f0;
+    color: #fff;
     margin-top: 2rem;
   }
   
