@@ -134,3 +134,30 @@ body {
   border-left: 2px solid #ffffff;
   box-shadow: -3px 0 5px rgba(0, 255, 0, 0.2);
 }
+
+#menu {
+  position: fixed;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  writing-mode: vertical-rl;
+  text-align: center;
+  background: #000;
+  border-left: 1px solid #0f0;
+  padding: 0.5rem;
+  z-index: 10;
+}
+
+.menu-item {
+  color: #0f0;
+  text-decoration: none;
+  font-family: monospace;
+  font-size: 1rem;
+  margin: 0.5rem 0;
+  display: inline-block;
+  transition: color 0.3s;
+}
+
+.menu-item:hover {
+  color: #9f9;
+}
