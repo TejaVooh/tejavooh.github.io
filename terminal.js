@@ -80,7 +80,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const storyEl = document.getElementById("typewriter-story");
 
   if (cmdEl) {
-    typewriterEffect(cmdEl, "commands: about, cv, skills, clear");
+    typewriterEffect(cmdEl, "commands: about, skills, clear");
   }
 
   if (storyEl) {
