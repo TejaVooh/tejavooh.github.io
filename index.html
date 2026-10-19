@@ -1,168 +1,394 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>Tejaanshu Khardekar — AI Product Readiness Consultant</title>
+<meta name="description" content="AI product readiness consultant helping AI and platform companies turn demos into signed enterprise deals. Enterprise and investor readiness, regulated-buyer readiness, AI discovery, and go-to-market proof. 18+ years building enterprise platforms.">
+<meta name="author" content="Tejaanshu Khardekar">
+<link rel="canonical" href="https://www.tejanshu.com/">
+<meta name="robots" content="index, follow, max-image-preview:large">
 
-<title>Tejanshu Khardekar | AI Native Platform Builder</title>
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://www.tejanshu.com/">
+<meta property="og:title" content="Tejaanshu Khardekar — AI Product Readiness Consultant">
+<meta property="og:description" content="Helping AI and platform companies turn demos into signed enterprise deals. Enterprise, regulated-buyer, AI-discovery and go-to-market readiness.">
+<meta property="og:site_name" content="Tejaanshu Khardekar">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Tejaanshu Khardekar — AI Product Readiness Consultant">
+<meta name="twitter:description" content="Helping AI and platform companies turn demos into signed enterprise deals.">
 
-<link rel="stylesheet" href="css/variables.css">
-<link rel="stylesheet" href="css/global.css">
-<link rel="stylesheet" href="css/home.css">
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="icon" href="images/favicon.ico">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&family=Inter:wght@400;500;600&display=swap">
 
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "Tejaanshu Khardekar — AI Product Readiness Consulting",
+  "description": "Consulting that helps AI and platform companies turn demos into signed enterprise deals: enterprise and investor readiness, regulated-buyer readiness, AI discovery readiness, and go-to-market proof.",
+  "url": "https://www.tejanshu.com/",
+  "areaServed": "Worldwide",
+  "founder": {
+    "@type": "Person",
+    "name": "Tejaanshu Khardekar",
+    "jobTitle": "AI Product Readiness Consultant",
+    "sameAs": "https://www.linkedin.com/in/tkhard/"
+  },
+  "email": "tejaanshukhardekar@gmail.com",
+  "telephone": "+918657132900",
+  "address": { "@type": "PostalAddress", "addressLocality": "Pune", "addressCountry": "IN" }
+}
+</script>
 
+<style>
+  /* Layout: a quiet information map — centered measure, generous air, one deep-teal accent on warm paper; serif headlines, clean sans body. */
+  :root {
+    --paper: #f6f4ef;
+    --card: #fffefb;
+    --ink: #1c1d1a;
+    --ink-soft: #52544e;
+    --ink-faint: #8b8d84;
+    --line: #e2ded4;
+    --accent: #0f5c54;
+    --accent-ink: #0b463f;
+    --accent-wash: #e9f0ee;
+    --display: "Newsreader", Georgia, "Times New Roman", serif;
+    --body: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --paper: #121311;
+      --card: #1a1b18;
+      --ink: #f1efe8;
+      --ink-soft: #b2b4ab;
+      --ink-faint: #7e8077;
+      --line: #2a2c27;
+      --accent: #5cc3b4;
+      --accent-ink: #8fd6ca;
+      --accent-wash: #1a2420;
+      color-scheme: dark;
+    }
+  }
+  :root[data-theme="dark"] {
+    --paper: #121311;
+    --card: #1a1b18;
+    --ink: #f1efe8;
+    --ink-soft: #b2b4ab;
+    --ink-faint: #7e8077;
+    --line: #2a2c27;
+    --accent: #5cc3b4;
+    --accent-ink: #8fd6ca;
+    --accent-wash: #1a2420;
+    color-scheme: dark;
+  }
+
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    background: var(--paper);
+    color: var(--ink);
+    font-family: var(--body);
+    font-size: 17px;
+    line-height: 1.62;
+    -webkit-font-smoothing: antialiased;
+    margin: 0;
+  }
+  .wrap {
+    max-width: 720px;
+    margin: 0 auto;
+    padding-left: max(22px, env(safe-area-inset-left, 0px));
+    padding-right: max(22px, env(safe-area-inset-right, 0px));
+  }
+
+  /* Header */
+  header { padding-block: 24px; }
+  .nav {
+    display: flex; justify-content: space-between; align-items: baseline;
+    gap: 16px; flex-wrap: wrap;
+  }
+  .brand { font-family: var(--display); font-size: 19px; font-weight: 500; letter-spacing: -0.01em; color: var(--ink); }
+  .nav-right { display: flex; gap: 22px; align-items: baseline; }
+  .nav a { font-size: 15px; color: var(--ink-soft); text-decoration: none; }
+  .nav a:hover { color: var(--accent); }
+  .nav a.cta { color: var(--accent); font-weight: 600; }
+
+  /* Hero */
+  .hero { padding-block: 52px 56px; border-bottom: 1px solid var(--line); }
+  .eyebrow { font-size: 14px; color: var(--accent); font-weight: 600; letter-spacing: 0.01em; margin: 0 0 20px; }
+  h1 {
+    font-family: var(--display); font-weight: 400;
+    font-size: clamp(31px, 6.2vw, 50px); line-height: 1.1;
+    letter-spacing: -0.02em; text-wrap: balance; margin: 0 0 24px; color: var(--ink);
+  }
+  h1 em { font-style: italic; color: var(--accent); }
+  .hero .lede { font-size: clamp(18px, 2.3vw, 20px); line-height: 1.55; color: var(--ink-soft); max-width: 56ch; margin: 0 0 32px; }
+  .hero-actions { display: flex; gap: 14px; flex-wrap: wrap; align-items: center; }
+  .btn {
+    display: inline-block; background: var(--accent); color: #fff;
+    font-size: 15.5px; font-weight: 600; text-decoration: none;
+    padding: 12px 22px; border-radius: 6px;
+  }
+  .btn:hover { background: var(--accent-ink); }
+  :root[data-theme="dark"] .btn, :root:not([data-theme="light"]) .btn { color: #0c1512; }
+  @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .btn { color: #0c1512; } }
+  .btn-text { font-size: 15.5px; color: var(--ink-soft); text-decoration: none; }
+  .btn-text:hover { color: var(--accent); }
+  .btn-ghost {
+    display: inline-block; background: transparent; color: var(--accent);
+    font-size: 15.5px; font-weight: 600; text-decoration: none;
+    padding: 11px 21px; border-radius: 6px; border: 1px solid var(--accent);
+  }
+  .btn-ghost:hover { background: var(--accent-wash); }
+  .contact-cta { display: flex; gap: 14px; flex-wrap: wrap; margin: 0 0 32px; }
+
+  /* Section scaffold */
+  section { padding-block: 52px; border-bottom: 1px solid var(--line); }
+  .section-head { max-width: 58ch; margin: 0 0 38px; }
+  h2 {
+    font-family: var(--display); font-weight: 400;
+    font-size: clamp(25px, 4.4vw, 33px); line-height: 1.18;
+    letter-spacing: -0.015em; text-wrap: balance; margin: 0 0 16px; color: var(--ink);
+  }
+  .section-head p { font-size: 18px; color: var(--ink-soft); margin: 0; }
+
+  /* Offering cards — the four readiness pillars */
+  .cards { display: grid; gap: 18px; }
+  .card {
+    background: var(--card); border: 1px solid var(--line);
+    border-radius: 10px; padding: 26px 26px 24px;
+  }
+  .card .pain {
+    font-family: var(--display); font-style: italic; font-weight: 400;
+    font-size: 20px; line-height: 1.35; color: var(--ink); margin: 0 0 14px;
+    padding-left: 16px; border-left: 2px solid var(--accent);
+  }
+  .card .label { font-size: 13px; font-weight: 600; color: var(--accent); letter-spacing: 0.02em; margin: 0 0 7px; }
+  .card .body { font-size: 16px; color: var(--ink-soft); line-height: 1.55; margin: 0; }
+  .card .body b { color: var(--ink); font-weight: 600; }
+
+  /* How it works */
+  .steps { display: grid; gap: 0; border: 1px solid var(--line); border-radius: 10px; overflow: hidden; background: var(--card); }
+  .step { display: grid; grid-template-columns: auto 1fr; gap: 18px; padding: 22px 24px; align-items: start; }
+  .step + .step { border-top: 1px solid var(--line); }
+  .step .num { font-family: var(--display); font-size: 22px; color: var(--accent); line-height: 1.2; }
+  .step .st { }
+  .step .st h3 { font-size: 16.5px; font-weight: 600; color: var(--ink); margin: 0 0 4px; }
+  .step .st p { font-size: 15.5px; color: var(--ink-soft); margin: 0; line-height: 1.5; }
+
+  /* Who it's for */
+  .for-list { display: grid; gap: 14px; }
+  .for-row { display: grid; grid-template-columns: auto 1fr; gap: 14px; align-items: baseline; }
+  .for-row .tick { color: var(--accent); font-weight: 700; }
+  .for-row p { margin: 0; font-size: 16.5px; color: var(--ink-soft); line-height: 1.5; }
+  .for-row p b { color: var(--ink); font-weight: 600; }
+
+  /* Credibility */
+  .stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; background: var(--line); border: 1px solid var(--line); border-radius: 10px; overflow: hidden; margin-bottom: 26px; }
+  .stat { background: var(--card); padding: 24px 18px; }
+  .stat .big { font-family: var(--display); font-size: 32px; color: var(--ink); line-height: 1; letter-spacing: -0.01em; font-variant-numeric: tabular-nums; }
+  .stat .lab { font-size: 13.5px; color: var(--ink-faint); margin-top: 9px; line-height: 1.35; }
+  @media (max-width: 560px) { .stats { grid-template-columns: 1fr; } }
+  .bio p { max-width: 60ch; color: var(--ink-soft); margin: 0 0 15px; }
+  .bio p:last-child { margin-bottom: 0; }
+  .bio p b { color: var(--ink); font-weight: 600; }
+  .proof { margin-top: 22px; padding: 16px 20px; background: var(--accent-wash); border-radius: 8px; font-size: 15.5px; color: var(--accent-ink); }
+
+  /* Contact */
+  #contact { border-bottom: none; }
+  .clines { display: grid; margin-top: 8px; }
+  .cline { display: grid; grid-template-columns: 96px 1fr; gap: 16px; padding: 14px 0; border-top: 1px solid var(--line); align-items: baseline; }
+  .cline:last-child { border-bottom: 1px solid var(--line); }
+  .cline .k { font-size: 13px; letter-spacing: 0.03em; color: var(--ink-faint); font-weight: 600; }
+  .cline .v { font-size: 16.5px; color: var(--ink); word-break: break-word; }
+  .cline a { color: var(--accent); text-decoration: none; }
+  .cline a:hover { text-decoration: underline; }
+  .copyrow { display: inline-flex; gap: 10px; align-items: center; flex-wrap: wrap; }
+  .copy { font-family: var(--body); font-size: 12.5px; color: var(--ink-soft); background: transparent; border: 1px solid var(--line); border-radius: 5px; padding: 3px 9px; cursor: pointer; }
+  .copy:hover { color: var(--accent); border-color: var(--accent); }
+  .copy:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+  footer { padding-block: 26px 44px; }
+  footer p { font-size: 13.5px; color: var(--ink-faint); margin: 0; }
+
+  a:focus-visible, .copy:focus-visible, .btn:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 3px; }
+  @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+</style>
 </head>
-
 <body>
+<div class="wrap">
 
-<section class="hero">
+  <header>
+    <nav class="nav">
+      <span class="brand">Tejaanshu Khardekar</span>
+      <span class="nav-right">
+        <a href="#work">Work</a>
+        <a href="#about">About</a>
+        <a href="#contact" class="cta">Talk to me</a>
+      </span>
+    </nav>
+  </header>
 
-<div class="hero__content">
+  <main>
+    <section class="hero">
+      <p class="eyebrow">AI Product Readiness</p>
+      <h1>Your AI product is better than the market believes. That gap is costing you <em>deals, raises, and time</em>.</h1>
+      <p class="lede">I help AI and platform companies make the real value inside their product visible and trusted, so the buyers and investors who look closely stop stalling and start signing.</p>
+      <div class="hero-actions">
+        <a href="#contact" class="btn">Book a first conversation</a>
+        <a href="PASTE_PAID_CALL_URL" class="btn-text" data-paid-call>Or book a paid 30-min strategy call</a>
+      </div>
+    </section>
 
-<p class="hero-command">
-teja@builder:~$ whois tejanshu
-</p>
+    <section id="work">
+      <div class="section-head">
+        <h2>Four places your deals are quietly leaking, and how I close them.</h2>
+        <p>Not pipeline. Trust. Here is where it breaks, in the words you would use yourself.</p>
+      </div>
+      <div class="cards">
 
-<h1 class="hero__title">
-Tejanshu Khardekar
-</h1>
+        <article class="card">
+          <p class="pain">The demo lands. The deal dies in technical diligence.</p>
+          <p class="label">Enterprise &amp; investor readiness</p>
+          <p class="body">Your champion loves it. Then it reaches their architect, their security team, their CFO, and the momentum evaporates. I get your product ready for the room you are not in, so the people who scrutinise it hardest become the reason it closes, <b>not the reason it stalls</b>.</p>
+        </article>
 
-<p class="hero__subtitle">
+        <article class="card">
+          <p class="pain">The regulated deals get furthest, then quietly disappear.</p>
+          <p class="label">Regulated-buyer readiness</p>
+          <p class="body">Banks, hospitals and insurers love the demo, then go silent. It is rarely your product. It is the questions their risk and compliance teams ask that nobody prepped you for, where data goes, what is logged, what you can prove months later. I read your product the way their auditor will, and tell you which answers are not ready <b>before the deal dies on them</b>.</p>
+        </article>
 
-Building AI-native products, enterprise platforms,
-knowledge systems, agentic workflows and intelligent
-software experiences that scale.
+        <article class="card">
+          <p class="pain">Your buyer asks an AI about your category. You are not the answer.</p>
+          <p class="label">AI discovery readiness</p>
+          <p class="body">Before anyone books a demo, they ask an AI assistant who to look at. If it cannot find you, hedges on you, or gets you wrong, you lost the deal before it started and never saw it happen. I make your product and content something AI systems surface and recommend <b>with confidence, not caveats</b>.</p>
+        </article>
 
-</p>
+        <article class="card">
+          <p class="pain">You are spending more to sell a story the market does not quite believe.</p>
+          <p class="label">Go-to-market &amp; proof readiness</p>
+          <p class="body">More leads will not fix a trust problem. I evaluate what you are taking to market, the positioning, the proof, the things a buyer has to believe, before you pour budget into pushing it, so every rupee and dollar of go-to-market spend lands on a message that <b>actually converts</b>.</p>
+        </article>
 
-<div class="terminal-grid">
+      </div>
+    </section>
 
-<div class="terminal-panel">
+    <section id="method">
+      <div class="section-head">
+        <h2>I go where the drift is, and bring three things back into line.</h2>
+        <p>What you built, how you tell it, and what a buyer needs to trust have usually pulled apart. From inside, they still look like one thing.</p>
+      </div>
+      <div class="steps">
+        <div class="step">
+          <span class="num">1</span>
+          <div class="st">
+            <h3>Open the product the way your buyer eventually will.</h3>
+            <p>I look at where the real value lives, and whether a serious technical buyer or investor can see it without you in the room.</p>
+          </div>
+        </div>
+        <div class="step">
+          <span class="num">2</span>
+          <div class="st">
+            <h3>Find where value, story and proof diverge.</h3>
+            <p>The exact points where your positioning outruns the product, or undersells the part that would win the deal.</p>
+          </div>
+        </div>
+        <div class="step">
+          <span class="num">3</span>
+          <div class="st">
+            <h3>Close the gap, so the demos that already land start closing.</h3>
+            <p>A clear, prioritised path to the answers, evidence and framing your hardest buyer needs before they commit.</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-<div class="terminal-header">
-whoami
+    <section id="who">
+      <div class="section-head">
+        <h2>Built for AI companies with a real product and a conversion they cannot explain.</h2>
+      </div>
+      <div class="for-list">
+        <div class="for-row"><span class="tick">—</span><p><b>Founders and CXOs</b> whose demos land but whose enterprise deals keep stalling after the technical conversation.</p></div>
+        <div class="for-row"><span class="tick">—</span><p><b>Teams selling into regulated buyers</b> in clinical, financial services and compliance, who need to be ready for the questions those buyers always ask.</p></div>
+        <div class="for-row"><span class="tick">—</span><p><b>Companies heading into a raise</b> who want the product to hold up when an investor looks under the hood, not just in the pitch.</p></div>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="section-head">
+        <h2>I have sat in all three seats that drift apart.</h2>
+      </div>
+      <div class="stats">
+        <div class="stat"><div class="big">18+</div><div class="lab">Years building enterprise platforms</div></div>
+        <div class="stat"><div class="big">14+</div><div class="lab">Platforms taken from zero to production</div></div>
+        <div class="stat"><div class="big">$1B+</div><div class="lab">In assets run on systems I built</div></div>
+      </div>
+      <div class="bio">
+        <p>Most people who sell positioning have never opened a backend. Most people who can read a backend cannot talk go-to-market. I have spent my career in the overlap: <b>building the platform</b>, so I know what it really does; <b>owning product and positioning</b>, so I see where the story outruns it; and <b>running deep technical reads on AI products</b>, so I know precisely where a buyer's trust breaks.</p>
+        <p>That work spans fintech, enterprise knowledge platforms, and AI systems including RAG and agent platforms at scale, across companies from early-stage to global. The through-line is the same thing I do here: seeing the whole system, and finding where it does not yet add up to the value that is really inside it.</p>
+        <p class="proof">Recent work includes confidential technical readiness reviews for three AI product companies in 2026.</p>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="section-head">
+        <h2>If your product is better than your market currently understands, let's talk.</h2>
+        <p>A first conversation is a look at where your value, your story and your buyer's trust have drifted, and what it would take to bring them back together. No obligation beyond the call.</p>
+      </div>
+      <div class="contact-cta">
+        <a href="PASTE_DISCOVERY_CALL_URL" class="btn" data-discovery-call>Book a free 20-min discovery call</a>
+        <a href="PASTE_PAID_CALL_URL" class="btn-ghost" data-paid-call>Book a paid 30-min strategy call</a>
+      </div>
+      <div class="clines">
+        <div class="cline">
+          <span class="k">Email</span>
+          <span class="v copyrow"><span>tejaanshukhardekar@gmail.com</span> <button class="copy" type="button" data-copy="tejaanshukhardekar@gmail.com">Copy</button></span>
+        </div>
+        <div class="cline">
+          <span class="k">Phone</span>
+          <span class="v copyrow"><span>+91 86571 32900</span> <button class="copy" type="button" data-copy="+918657132900">Copy</button></span>
+        </div>
+        <div class="cline">
+          <span class="k">LinkedIn</span>
+          <span class="v"><a href="https://www.linkedin.com/in/tkhard/">linkedin.com/in/tkhard</a></span>
+        </div>
+        <div class="cline">
+          <span class="k">Based in</span>
+          <span class="v">Pune, India &middot; working worldwide</span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Tejaanshu Khardekar &middot; AI Product Readiness Consulting &middot; Pune, India</p>
+  </footer>
+
 </div>
 
-<div class="terminal-content">
-
-<p>Technical Product Manager</p>
-<p>AI Native Platform Builder</p>
-<p>Product Engineering Lead</p>
-<p>Platform Architect</p>
-
-</div>
-
-</div>
-
-<div class="terminal-panel">
-
-<div class="terminal-header">
-stats
-</div>
-
-<div class="terminal-content">
-
-<p>20+ Years Experience</p>
-<p>50M+ Users Impacted</p>
-<p>10+ Enterprise Platforms</p>
-<p>$750M+ Business Impact</p>
-
-</div>
-
-</div>
-
-<div class="terminal-panel">
-
-<div class="terminal-header">
-currently
-</div>
-
-<div class="terminal-content">
-
-<p>Building: AI Native Platforms</p>
-<p>Exploring: Agentic Systems</p>
-<p>Researching: Memory Architectures</p>
-<p>Learning: Multi-Agent Workflows</p>
-
-</div>
-
-</div>
-
-</div>
-
-<div class="terminal-panel history-panel">
-
-<div class="terminal-header">
-history
-</div>
-
-<div class="terminal-content">
-
-<p>2003 → Clairmail</p>
-<p>2009 → Adobe</p>
-<p>2013 → Oracle</p>
-<p>2014 → ProgramBots</p>
-<p>2019 → Linedata</p>
-<p>2023 → DAF Studios</p>
-<p>2025 → Deloitte AI Core</p>
-
-</div>
-
-</div>
-
-<div class="terminal-panel projects-panel">
-
-<div class="terminal-header">
-ls projects
-</div>
-
-<div class="terminal-content">
-
-<p>semoss/</p>
-<p>gistify/</p>
-<p>soperator/</p>
-<p>village-learning-platform/</p>
-<p>interview-sandbox/</p>
-
-</div>
-
-</div>
-
-<div class="terminal-panel nav-panel">
-
-<div class="terminal-header">
-navigation
-</div>
-
-<div class="terminal-content">
-
-<p>
-<a class="terminal-link" href="portfolio.html">
-$ cd portfolio
-</a>
-</p>
-
-<p>
-<a class="terminal-link" href="blog.html">
-$ cat ideas.md
-</a>
-</p>
-
-
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-<div class="floating-prompt">
-teja@builder:~$
-</div>
+<script>
+  document.querySelectorAll('.copy').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      var text = btn.getAttribute('data-copy');
+      var flip = function () {
+        var old = btn.textContent;
+        btn.textContent = 'Copied';
+        setTimeout(function () { btn.textContent = old; }, 1400);
+      };
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(text).then(flip).catch(function () {
+          try {
+            var span = btn.previousElementSibling;
+            var r = document.createRange(); r.selectNodeContents(span);
+            var s = window.getSelection(); s.removeAllRanges(); s.addRange(r);
+          } catch (e) {}
+          flip();
+        });
+      } else { flip(); }
+    });
+  });
+</script>
 </body>
 </html>
