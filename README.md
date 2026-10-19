@@ -1,35 +1,38 @@
-# tejanshu.com
+# tejavooh.github.io
 
-Single-page site for Tejaanshu Khardekar, AI Product Readiness Consulting.
+# Terminal Portfolio - tejavooh.github.io
 
-## Files
-- `index.html` — the whole site (self-contained; fonts load from Google Fonts)
-- `CNAME` — custom domain (www.tejanshu.com). Do not delete.
-- `.nojekyll` — tells GitHub Pages to serve files as-is, no Jekyll build
-- `images/favicon.ico` — browser tab icon
-- `LICENSE`
+This is a fun, interactive terminal-style web portfolio built with vanilla HTML/JS/CSS and Node.js for local development.
 
-## Deploy
-Upload these files to the root of the `tejavooh.github.io` repo, replacing the old `index.html`.
-Keep `CNAME` and `.nojekyll`. Live at https://www.tejanshu.com within a minute or two.
+## Features
+- Terminal interface that responds to typed commands
+- Real-time command output
+- Local dev preview on `http://127.0.0.1:8080`
 
-## Before you go live: wire the two call buttons
-The page has two call-to-action buttons pointing at placeholder links. Replace them once your
-scheduler is set up. Search `index.html` for these two strings and swap in your real URLs:
+## Setup
 
-- `PASTE_DISCOVERY_CALL_URL`  → your FREE 20-min discovery call booking link
-- `PASTE_PAID_CALL_URL`       → your PAID 30-min strategy call booking link (appears twice)
+```bash
+# Clone the repo
+git clone https://github.com/TejaVooh/tejavooh.github.io.git
+cd tejavooh.github.io
 
-### Recommended scheduler: Cal.com (free, PayPal + Stripe, auto-Zoom)
-1. Sign up at cal.com with tejaanshukhardekar@gmail.com.
-2. Connect your calendar (Google), connect Zoom, connect PayPal and/or Stripe.
-3. Create two event types:
-   - "Discovery call" — 20 min, free, Zoom location.
-   - "Strategy call" — 30 min, price set, require payment to book, Zoom location.
-4. Copy each event's public URL (e.g. https://cal.com/tejanshu/strategy-call).
-5. Paste those URLs over the two placeholders above and re-upload index.html.
+# Install dependencies (for local preview)
+npm install
+```
 
-Payment, slot, timezone, reminder and the Zoom link are all handled by Cal.com.
-Nothing to code on the site.
+## Run Locally
+```bash
+npm start
+```
+Then open [http://127.0.0.1:8080](http://127.0.0.1:8080)
 
-Until the links are set, the buttons point nowhere useful — set them before sharing the site.
+## Deployment
+This repo is automatically deployed from the `main` branch via GitHub Pages.
+
+## Versioning
+- `main`: production/live site
+- `dev`: ongoing development
+- `feature/*`: feature-specific branches
+
+## License
+MIT
