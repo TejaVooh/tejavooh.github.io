@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 <title>Tejaanshu Khardekar — AI Product Readiness Consultant</title>
-<meta name="description" content="AI product readiness consultant helping AI and platform companies turn demos into signed enterprise deals. Enterprise and investor readiness, regulated-buyer readiness, AI discovery, and go-to-market proof. 18+ years building enterprise platforms.">
+<meta name="description" content="AI product readiness consultant helping AI and platform companies turn demos into signed enterprise deals. Enterprise and investor readiness, regulated-buyer readiness, AI unit economics, AI discovery, and go-to-market proof. 18+ years building enterprise platforms.">
 <meta name="author" content="Tejaanshu Khardekar">
 <link rel="canonical" href="https://www.tejanshu.com/">
 <meta name="robots" content="index, follow, max-image-preview:large">
@@ -12,11 +12,11 @@
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://www.tejanshu.com/">
 <meta property="og:title" content="Tejaanshu Khardekar — AI Product Readiness Consultant">
-<meta property="og:description" content="Helping AI and platform companies turn demos into signed enterprise deals. Enterprise, regulated-buyer, AI-discovery and go-to-market readiness.">
+<meta property="og:description" content="I help AI companies turn demos into signed enterprise deals. Enterprise, regulated-buyer, unit-economics, AI-discovery and go-to-market readiness.">
 <meta property="og:site_name" content="Tejaanshu Khardekar">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Tejaanshu Khardekar — AI Product Readiness Consultant">
-<meta name="twitter:description" content="Helping AI and platform companies turn demos into signed enterprise deals.">
+<meta name="twitter:description" content="I help AI companies turn demos into signed enterprise deals.">
 
 <link rel="icon" href="images/favicon.ico">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -27,7 +27,7 @@
   "@context": "https://schema.org",
   "@type": "ProfessionalService",
   "name": "Tejaanshu Khardekar — AI Product Readiness Consulting",
-  "description": "Consulting that helps AI and platform companies turn demos into signed enterprise deals: enterprise and investor readiness, regulated-buyer readiness, AI discovery readiness, and go-to-market proof.",
+  "description": "Consulting that helps AI and platform companies turn demos into signed enterprise deals: enterprise and investor readiness, regulated-buyer readiness, AI unit economics and cost-to-serve, AI discovery readiness, and go-to-market proof.",
   "url": "https://www.tejanshu.com/",
   "areaServed": "Worldwide",
   "founder": {
@@ -37,12 +37,23 @@
     "sameAs": "https://www.linkedin.com/in/tkhard/"
   },
   "email": "tejaanshukhardekar@gmail.com",
-  "address": { "@type": "PostalAddress", "addressLocality": "Pune", "addressCountry": "IN" }
+  "address": { "@type": "PostalAddress", "addressLocality": "Pune", "addressCountry": "IN" },
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Services",
+    "itemListElement": [
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Enterprise and investor readiness" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Regulated-buyer readiness" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "AI unit economics and cost-to-serve" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "AI discovery readiness" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Go-to-market and proof readiness" } }
+    ]
+  }
 }
 </script>
 
 <style>
-  /* Layout: a quiet information map — centered measure, generous air, one deep-teal accent on warm paper; serif headlines, clean sans body. */
+  /* Light-locked. Warm paper, deep ink, one teal accent. Serif display, sans body. */
   :root {
     --paper: #f6f4ef;
     --card: #fffefb;
@@ -55,32 +66,7 @@
     --accent-wash: #e9f0ee;
     --display: "Newsreader", Georgia, "Times New Roman", serif;
     --body: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  }
-  @media (prefers-color-scheme: dark) {
-    :root:not([data-theme="light"]) {
-      --paper: #121311;
-      --card: #1a1b18;
-      --ink: #f1efe8;
-      --ink-soft: #b2b4ab;
-      --ink-faint: #7e8077;
-      --line: #2a2c27;
-      --accent: #5cc3b4;
-      --accent-ink: #8fd6ca;
-      --accent-wash: #1a2420;
-      color-scheme: dark;
-    }
-  }
-  :root[data-theme="dark"] {
-    --paper: #121311;
-    --card: #1a1b18;
-    --ink: #f1efe8;
-    --ink-soft: #b2b4ab;
-    --ink-faint: #7e8077;
-    --line: #2a2c27;
-    --accent: #5cc3b4;
-    --accent-ink: #8fd6ca;
-    --accent-wash: #1a2420;
-    color-scheme: dark;
+    color-scheme: light;
   }
 
   * { box-sizing: border-box; }
@@ -90,293 +76,78 @@
     color: var(--ink);
     font-family: var(--body);
     font-size: 17px;
-    line-height: 1.62;
+    line-height: 1.6;
     -webkit-font-smoothing: antialiased;
     margin: 0;
   }
   .wrap {
-    max-width: 720px;
+    max-width: 760px;
     margin: 0 auto;
     padding-left: max(22px, env(safe-area-inset-left, 0px));
     padding-right: max(22px, env(safe-area-inset-right, 0px));
   }
 
-  /* Header */
-  header { padding-block: 24px; }
-  .nav {
-    display: flex; justify-content: space-between; align-items: baseline;
-    gap: 16px; flex-wrap: wrap;
-  }
-  .brand { font-family: var(--display); font-size: 19px; font-weight: 500; letter-spacing: -0.01em; color: var(--ink); }
-  .nav-right { display: flex; gap: 22px; align-items: baseline; }
+  header { padding-block: 22px; }
+  .nav { display: flex; justify-content: space-between; align-items: baseline; gap: 16px; flex-wrap: wrap; }
+  .brand { font-family: var(--display); font-size: 19px; font-weight: 500; letter-spacing: -0.01em; }
+  .nav-right { display: flex; gap: 20px; align-items: baseline; }
   .nav a { font-size: 15px; color: var(--ink-soft); text-decoration: none; }
   .nav a:hover { color: var(--accent); }
   .nav a.cta { color: var(--accent); font-weight: 600; }
 
-  /* Hero */
-  .hero { padding-block: 52px 56px; border-bottom: 1px solid var(--line); }
-  .eyebrow { font-size: 14px; color: var(--accent); font-weight: 600; letter-spacing: 0.01em; margin: 0 0 20px; }
+  /* Hero — short. Value starts immediately after. */
+  .hero { padding-block: 44px 38px; }
+  .eyebrow { font-size: 14px; color: var(--accent); font-weight: 600; margin: 0 0 18px; }
   h1 {
     font-family: var(--display); font-weight: 400;
-    font-size: clamp(31px, 6.2vw, 50px); line-height: 1.1;
-    letter-spacing: -0.02em; text-wrap: balance; margin: 0 0 24px; color: var(--ink);
+    font-size: clamp(30px, 5.8vw, 46px); line-height: 1.12;
+    letter-spacing: -0.02em; text-wrap: balance; margin: 0 0 20px;
   }
   h1 em { font-style: italic; color: var(--accent); }
-  .hero .lede { font-size: clamp(18px, 2.3vw, 20px); line-height: 1.55; color: var(--ink-soft); max-width: 56ch; margin: 0 0 32px; }
-  .hero-actions { display: flex; gap: 14px; flex-wrap: wrap; align-items: center; }
+  .lede { font-size: 19px; line-height: 1.5; color: var(--ink-soft); max-width: 54ch; margin: 0 0 28px; }
+  .actions { display: flex; gap: 14px; flex-wrap: wrap; align-items: center; }
   .btn {
     display: inline-block; background: var(--accent); color: #fff;
     font-size: 15.5px; font-weight: 600; text-decoration: none;
     padding: 12px 22px; border-radius: 6px;
   }
   .btn:hover { background: var(--accent-ink); }
-  :root[data-theme="dark"] .btn, :root:not([data-theme="light"]) .btn { color: #0c1512; }
-  @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .btn { color: #0c1512; } }
-  .btn-text { font-size: 15.5px; color: var(--ink-soft); text-decoration: none; }
-  .btn-text:hover { color: var(--accent); }
   .btn-ghost {
     display: inline-block; background: transparent; color: var(--accent);
     font-size: 15.5px; font-weight: 600; text-decoration: none;
     padding: 11px 21px; border-radius: 6px; border: 1px solid var(--accent);
   }
   .btn-ghost:hover { background: var(--accent-wash); }
-  .contact-cta { display: flex; gap: 14px; flex-wrap: wrap; margin: 0 0 32px; }
 
-  /* Section scaffold */
-  section { padding-block: 52px; border-bottom: 1px solid var(--line); }
-  .section-head { max-width: 58ch; margin: 0 0 38px; }
+  section { padding-block: 42px; border-top: 1px solid var(--line); }
   h2 {
     font-family: var(--display); font-weight: 400;
-    font-size: clamp(25px, 4.4vw, 33px); line-height: 1.18;
-    letter-spacing: -0.015em; text-wrap: balance; margin: 0 0 16px; color: var(--ink);
+    font-size: clamp(23px, 4vw, 29px); line-height: 1.2;
+    letter-spacing: -0.015em; text-wrap: balance; margin: 0 0 26px;
   }
-  .section-head p { font-size: 18px; color: var(--ink-soft); margin: 0; }
 
-  /* Offering cards — the four readiness pillars */
-  .cards { display: grid; gap: 18px; }
-  .card {
-    background: var(--card); border: 1px solid var(--line);
-    border-radius: 10px; padding: 26px 26px 24px;
-  }
-  .card .pain {
-    font-family: var(--display); font-style: italic; font-weight: 400;
-    font-size: 20px; line-height: 1.35; color: var(--ink); margin: 0 0 14px;
-    padding-left: 16px; border-left: 2px solid var(--accent);
-  }
-  .card .label { font-size: 13px; font-weight: 600; color: var(--accent); letter-spacing: 0.02em; margin: 0 0 7px; }
-  .card .body { font-size: 16px; color: var(--ink-soft); line-height: 1.55; margin: 0; }
-  .card .body b { color: var(--ink); font-weight: 600; }
+  /* Services — name first, then the line that makes them nod. */
+  .svc { display: grid; gap: 1px; background: var(--line); border: 1px solid var(--line); border-radius: 10px; overflow: hidden; }
+  .svc-item { background: var(--card); padding: 22px 24px; }
+  .svc-item h3 { font-size: 17.5px; font-weight: 600; color: var(--ink); margin: 0 0 7px; letter-spacing: -0.005em; }
+  .svc-item p { margin: 0; font-size: 16px; line-height: 1.5; color: var(--ink-soft); }
+  .svc-item p b { color: var(--ink); font-weight: 600; }
 
-  /* How it works */
-  .steps { display: grid; gap: 0; border: 1px solid var(--line); border-radius: 10px; overflow: hidden; background: var(--card); }
-  .step { display: grid; grid-template-columns: auto 1fr; gap: 16px; padding: 18px 24px; align-items: center; }
-  .step + .step { border-top: 1px solid var(--line); }
-  .step .num { font-family: var(--display); font-size: 20px; color: var(--accent); line-height: 1; }
-  .step .st h3 { font-size: 17px; font-weight: 500; color: var(--ink); margin: 0; }
+  /* Engagements */
+  .eng { display: grid; gap: 16px; }
+  .eng-item { display: grid; grid-template-columns: 190px 1fr; gap: 18px; align-items: baseline; padding-bottom: 16px; border-bottom: 1px solid var(--line); }
+  .eng-item:last-child { border-bottom: none; padding-bottom: 0; }
+  .eng-item .n { font-weight: 600; font-size: 16.5px; color: var(--ink); }
+  .eng-item .d { font-size: 16px; color: var(--ink-soft); line-height: 1.5; }
+  @media (max-width: 560px) { .eng-item { grid-template-columns: 1fr; gap: 5px; } }
 
-  /* Who it's for */
-  .for-list { display: grid; gap: 14px; }
-  .for-row { display: grid; grid-template-columns: auto 1fr; gap: 14px; align-items: baseline; }
-  .for-row .tick { color: var(--accent); font-weight: 700; }
-  .for-row p { margin: 0; font-size: 16.5px; color: var(--ink-soft); line-height: 1.5; }
-  .for-row p b { color: var(--ink); font-weight: 600; }
+  /* Who */
+  .who { display: grid; gap: 13px; }
+  .who-row { display: grid; grid-template-columns: auto 1fr; gap: 13px; align-items: baseline; }
+  .who-row .tick { color: var(--accent); font-weight: 700; }
+  .who-row p { margin: 0; font-size: 16.5px; color: var(--ink-soft); line-height: 1.5; }
+  .who-row p b { color: var(--ink); font-weight: 600; }
 
   /* Credibility */
-  .stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; background: var(--line); border: 1px solid var(--line); border-radius: 10px; overflow: hidden; margin-bottom: 26px; }
-  .stat { background: var(--card); padding: 24px 18px; }
-  .stat .big { font-family: var(--display); font-size: 32px; color: var(--ink); line-height: 1; letter-spacing: -0.01em; font-variant-numeric: tabular-nums; }
-  .stat .lab { font-size: 13.5px; color: var(--ink-faint); margin-top: 9px; line-height: 1.35; }
-  @media (max-width: 560px) { .stats { grid-template-columns: 1fr; } }
-  .bio p { max-width: 60ch; color: var(--ink-soft); margin: 0 0 15px; }
-  .bio p:last-child { margin-bottom: 0; }
-  .bio p b { color: var(--ink); font-weight: 600; }
-  .proof { margin-top: 22px; padding: 16px 20px; background: var(--accent-wash); border-radius: 8px; font-size: 15.5px; color: var(--accent-ink); }
-
-  /* Contact */
-  #contact { border-bottom: none; }
-  .clines { display: grid; margin-top: 8px; }
-  .cline { display: grid; grid-template-columns: 96px 1fr; gap: 16px; padding: 14px 0; border-top: 1px solid var(--line); align-items: baseline; }
-  .cline:last-child { border-bottom: 1px solid var(--line); }
-  .cline .k { font-size: 13px; letter-spacing: 0.03em; color: var(--ink-faint); font-weight: 600; }
-  .cline .v { font-size: 16.5px; color: var(--ink); word-break: break-word; }
-  .cline a { color: var(--accent); text-decoration: none; }
-  .cline a:hover { text-decoration: underline; }
-  .copyrow { display: inline-flex; gap: 10px; align-items: center; flex-wrap: wrap; }
-  .copy { font-family: var(--body); font-size: 12.5px; color: var(--ink-soft); background: transparent; border: 1px solid var(--line); border-radius: 5px; padding: 3px 9px; cursor: pointer; }
-  .copy:hover { color: var(--accent); border-color: var(--accent); }
-  .copy:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
-
-  footer { padding-block: 26px 44px; }
-  footer p { font-size: 13.5px; color: var(--ink-faint); margin: 0; }
-
-  a:focus-visible, .copy:focus-visible, .btn:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 3px; }
-  @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
-</style>
-</head>
-<body>
-<div class="wrap">
-
-  <header>
-    <nav class="nav">
-      <span class="brand">Tejaanshu Khardekar</span>
-      <span class="nav-right">
-        <a href="#work">Work</a>
-        <a href="#about">About</a>
-        <a href="#contact" class="cta">Talk to me</a>
-      </span>
-    </nav>
-  </header>
-
-  <main>
-    <section class="hero">
-      <p class="eyebrow">AI Product Readiness</p>
-      <h1>Your AI product is better than the market believes. That gap is costing you <em>deals you should be winning</em>.</h1>
-      <p class="lede">I make the real value inside your product visible and trusted, so the buyers and investors who look closely stop stalling and start signing.</p>
-      <div class="hero-actions">
-        <a href="#contact" class="btn">Book a first conversation</a>
-        <a href="PASTE_PAID_CALL_URL" class="btn-text" data-paid-call>Or book a paid 30-min strategy call</a>
-      </div>
-    </section>
-
-    <section id="work">
-      <div class="section-head">
-        <h2>Four places your deals are quietly leaking.</h2>
-        <p>Not pipeline. Trust.</p>
-      </div>
-      <div class="cards">
-
-        <article class="card">
-          <p class="pain">The demo lands. The deal dies in technical diligence.</p>
-          <p class="label">Enterprise &amp; investor readiness</p>
-          <p class="body">I get your product ready for the architect, the security team and the CFO, so the hardest scrutiny becomes the reason it closes.</p>
-        </article>
-
-        <article class="card">
-          <p class="pain">The regulated deals get furthest, then quietly disappear.</p>
-          <p class="label">Regulated-buyer readiness</p>
-          <p class="body">I read your product the way a bank's or hospital's auditor will, and surface the answers you need before the deal goes quiet.</p>
-        </article>
-
-        <article class="card">
-          <p class="pain">Your buyer asks an AI about your category. You are not the answer.</p>
-          <p class="label">AI discovery readiness</p>
-          <p class="body">I make your product something AI assistants surface and recommend accurately, before the deal is lost where you cannot see it.</p>
-        </article>
-
-        <article class="card">
-          <p class="pain">You spend more to sell a story the market does not quite believe.</p>
-          <p class="label">Go-to-market &amp; proof readiness</p>
-          <p class="body">I align your positioning and proof before you spend on pushing it, so the spend lands on a message that converts.</p>
-        </article>
-
-      </div>
-    </section>
-
-    <section id="method">
-      <div class="section-head">
-        <h2>How I work.</h2>
-      </div>
-      <div class="steps">
-        <div class="step">
-          <span class="num">1</span>
-          <div class="st">
-            <h3>Open the product the way your buyer will.</h3>
-          </div>
-        </div>
-        <div class="step">
-          <span class="num">2</span>
-          <div class="st">
-            <h3>Find where value, story and proof diverge.</h3>
-          </div>
-        </div>
-        <div class="step">
-          <span class="num">3</span>
-          <div class="st">
-            <h3>Close the gap, so demos start converting.</h3>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="who">
-      <div class="section-head">
-        <h2>Who I work with.</h2>
-      </div>
-      <div class="for-list">
-        <div class="for-row"><span class="tick">—</span><p><b>Founders and CXOs</b> whose demos land but whose enterprise deals stall after the technical conversation.</p></div>
-        <div class="for-row"><span class="tick">—</span><p><b>Teams selling into regulated buyers</b> in clinical, financial services and compliance.</p></div>
-        <div class="for-row"><span class="tick">—</span><p><b>Companies heading into a raise</b> who need the product to hold up when an investor looks closely.</p></div>
-      </div>
-    </section>
-
-    <section id="about">
-      <div class="section-head">
-        <h2>I have sat in all three seats that drift apart.</h2>
-      </div>
-      <div class="stats">
-        <div class="stat"><div class="big">18+</div><div class="lab">Years building enterprise platforms</div></div>
-        <div class="stat"><div class="big">14+</div><div class="lab">Platforms taken from zero to production</div></div>
-        <div class="stat"><div class="big">$1B+</div><div class="lab">In assets run on systems I built</div></div>
-      </div>
-      <div class="bio">
-        <p>Most people who sell positioning have never opened a backend. Most who can read a backend cannot talk go-to-market. I work in the overlap: I have built the platforms, owned the positioning, and read AI products the way their hardest buyer will.</p>
-        <p class="proof">Recent work: confidential technical readiness reviews for three AI product companies, 2026.</p>
-      </div>
-    </section>
-
-    <section id="contact">
-      <div class="section-head">
-        <h2>If your product is better than your market believes, let's talk.</h2>
-        <p>A first conversation, no obligation. We find where your value, story and buyer trust have drifted, and what it takes to close the gap.</p>
-      </div>
-      <div class="contact-cta">
-        <a href="PASTE_DISCOVERY_CALL_URL" class="btn" data-discovery-call>Book a free 20-min discovery call</a>
-        <a href="PASTE_PAID_CALL_URL" class="btn-ghost" data-paid-call>Book a paid 30-min strategy call</a>
-      </div>
-      <div class="clines">
-        <div class="cline">
-          <span class="k">Email</span>
-          <span class="v copyrow"><span>tejaanshukhardekar@gmail.com</span> <button class="copy" type="button" data-copy="tejaanshukhardekar@gmail.com">Copy</button></span>
-        </div>
-        <div class="cline">
-          <span class="k">LinkedIn</span>
-          <span class="v"><a href="https://www.linkedin.com/in/tkhard/">linkedin.com/in/tkhard</a></span>
-        </div>
-        <div class="cline">
-          <span class="k">Based in</span>
-          <span class="v">Pune, India &middot; working worldwide</span>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer>
-    <p>Tejaanshu Khardekar &middot; AI Product Readiness Consulting &middot; Pune, India</p>
-  </footer>
-
-</div>
-
-<script>
-  document.querySelectorAll('.copy').forEach(function (btn) {
-    btn.addEventListener('click', function () {
-      var text = btn.getAttribute('data-copy');
-      var flip = function () {
-        var old = btn.textContent;
-        btn.textContent = 'Copied';
-        setTimeout(function () { btn.textContent = old; }, 1400);
-      };
-      if (navigator.clipboard && navigator.clipboard.writeText) {
-        navigator.clipboard.writeText(text).then(flip).catch(function () {
-          try {
-            var span = btn.previousElementSibling;
-            var r = document.createRange(); r.selectNodeContents(span);
-            var s = window.getSelection(); s.removeAllRanges(); s.addRange(r);
-          } catch (e) {}
-          flip();
-        });
-      } else { flip(); }
-    });
-  });
-</script>
-</body>
-</html>
+  .stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; background: var(--line); border: 1px solid var(--line); border-radius: 10px; overflow: hidden; margin-bottom: 24px; }
+  .stat { background: var(--card); padding:
