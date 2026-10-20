@@ -150,4 +150,181 @@
 
   /* Credibility */
   .stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; background: var(--line); border: 1px solid var(--line); border-radius: 10px; overflow: hidden; margin-bottom: 24px; }
-  .stat { background: var(--card); padding:
+  .stat { background: var(--card); padding: 22px 18px; }
+  .stat .big { font-family: var(--display); font-size: 30px; line-height: 1; letter-spacing: -0.01em; font-variant-numeric: tabular-nums; }
+  .stat .lab { font-size: 13.5px; color: var(--ink-faint); margin-top: 8px; line-height: 1.35; }
+  @media (max-width: 560px) { .stats { grid-template-columns: 1fr; } }
+  .bio p { max-width: 62ch; color: var(--ink-soft); margin: 0 0 14px; }
+  .bio p b { color: var(--ink); font-weight: 600; }
+  .proof { margin: 0; padding: 15px 19px; background: var(--accent-wash); border-radius: 8px; font-size: 15.5px; color: var(--accent-ink); }
+
+  /* Contact */
+  .contact-cta { display: flex; gap: 14px; flex-wrap: wrap; margin: 0 0 30px; }
+  .clines { display: grid; }
+  .cline { display: grid; grid-template-columns: 96px 1fr; gap: 16px; padding: 13px 0; border-top: 1px solid var(--line); align-items: baseline; }
+  .cline:last-child { border-bottom: 1px solid var(--line); }
+  .cline .k { font-size: 13px; color: var(--ink-faint); font-weight: 600; }
+  .cline .v { font-size: 16.5px; word-break: break-word; }
+  .cline a { color: var(--accent); text-decoration: none; }
+  .cline a:hover { text-decoration: underline; }
+  .copyrow { display: inline-flex; gap: 10px; align-items: center; flex-wrap: wrap; }
+  .copy { font-family: var(--body); font-size: 12.5px; color: var(--ink-soft); background: transparent; border: 1px solid var(--line); border-radius: 5px; padding: 3px 9px; cursor: pointer; }
+  .copy:hover { color: var(--accent); border-color: var(--accent); }
+
+  footer { padding-block: 24px 40px; border-top: 1px solid var(--line); }
+  footer p { font-size: 13.5px; color: var(--ink-faint); margin: 0; }
+
+  a:focus-visible, .copy:focus-visible, .btn:focus-visible, .btn-ghost:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 3px; }
+  @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <nav class="nav">
+      <span class="brand">Tejaanshu Khardekar</span>
+      <span class="nav-right">
+        <a href="#services">Services</a>
+        <a href="#about">About</a>
+        <a href="#contact" class="cta">Talk to me</a>
+      </span>
+    </nav>
+  </header>
+
+  <main>
+    <div class="hero">
+      <p class="eyebrow">AI Product Leadership &amp; Readiness</p>
+      <h1>Your AI product is better than the market believes. That gap is costing you <em>deals you should be winning</em>.</h1>
+      <p class="lede">I find why serious buyers stall, and fix it, so the demos you already win start closing.</p>
+      <div class="actions">
+        <a href="#contact" class="btn">Book a first conversation</a>
+        <a href="#services" class="btn-ghost">What I do</a>
+      </div>
+    </div>
+
+    <section id="services">
+      <h2>What I do.</h2>
+      <div class="svc">
+
+        <div class="svc-item">
+          <h3>Enterprise &amp; investor readiness</h3>
+          <p>The demo lands, then the deal dies in technical diligence. I get your product ready for the architect, the security team and the CFO, so the hardest scrutiny becomes <b>the reason it closes</b>.</p>
+        </div>
+
+        <div class="svc-item">
+          <h3>Regulated-buyer readiness</h3>
+          <p>Banks, hospitals and insurers love the demo, then go quiet. I read your product the way their auditor will, and surface the answers you need <b>before the deal stalls</b>.</p>
+        </div>
+
+        <div class="svc-item">
+          <h3>AI unit economics &amp; cost-to-serve</h3>
+          <p>Your buyer asks what this costs at scale. So does your investor. I model your real cost per outcome and whether the stack you chose <b>survives the volume you are promising</b>.</p>
+        </div>
+
+        <div class="svc-item">
+          <h3>AI discovery readiness</h3>
+          <p>Buyers ask an AI about your category before they ask you. I make sure you are found, and <b>described accurately</b>, when that happens.</p>
+        </div>
+
+        <div class="svc-item">
+          <h3>Go-to-market &amp; proof</h3>
+          <p>You spend more to sell a story the market does not quite believe. I align your positioning and proof before you spend on pushing it, so the spend lands on <b>a message that converts</b>.</p>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="engagements">
+      <h2>Ways to work together.</h2>
+      <div class="eng">
+        <div class="eng-item">
+          <span class="n">Readiness review</span>
+          <span class="d">Fixed scope. I open the product the way your hardest buyer will, and hand you a prioritised path to the gaps.</span>
+        </div>
+        <div class="eng-item">
+          <span class="n">Viability review</span>
+          <span class="d">Before you build. Whether the market pays enough to cover what this costs to run, and what it should be built on.</span>
+        </div>
+        <div class="eng-item">
+          <span class="n">Embedded product leadership</span>
+          <span class="d">Ongoing. I run product alongside your team, through the quarter that has to land. Fractional CPO, by any name.</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="who">
+      <h2>Who I work with.</h2>
+      <div class="who">
+        <div class="who-row"><span class="tick">—</span><p><b>Founders and CXOs</b> whose demos land but whose enterprise deals stall after the technical conversation.</p></div>
+        <div class="who-row"><span class="tick">—</span><p><b>Teams selling into regulated buyers</b> in clinical, financial services and compliance.</p></div>
+        <div class="who-row"><span class="tick">—</span><p><b>Companies heading into a raise</b> who need the product to hold up when an investor looks closely.</p></div>
+      </div>
+    </section>
+
+    <section id="about">
+      <h2>Why me.</h2>
+      <div class="stats">
+        <div class="stat"><div class="big">18+</div><div class="lab">Years building enterprise platforms</div></div>
+        <div class="stat"><div class="big">14+</div><div class="lab">Platforms taken from zero to production</div></div>
+        <div class="stat"><div class="big">$1B+</div><div class="lab">In assets run on systems I built</div></div>
+      </div>
+      <div class="bio">
+        <p>Most people who sell positioning have never opened a backend. Most who can read a backend cannot talk go-to-market. I work in the overlap: I have <b>built the platforms</b>, <b>owned the positioning</b>, and read AI products the way their hardest buyer will.</p>
+        <p class="proof">Recent work: confidential technical readiness reviews for three AI product companies, 2026.</p>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>If your product is better than your market believes, let's talk.</h2>
+      <div class="contact-cta">
+        <a href="PASTE_DISCOVERY_CALL_URL" class="btn">Book a free 20-min discovery call</a>
+        <a href="PASTE_PAID_CALL_URL" class="btn-ghost">Book a paid 30-min strategy call</a>
+      </div>
+      <div class="clines">
+        <div class="cline">
+          <span class="k">Email</span>
+          <span class="v copyrow"><span>tejaanshukhardekar@gmail.com</span> <button class="copy" type="button" data-copy="tejaanshukhardekar@gmail.com">Copy</button></span>
+        </div>
+        <div class="cline">
+          <span class="k">LinkedIn</span>
+          <span class="v"><a href="https://www.linkedin.com/in/tkhard/">linkedin.com/in/tkhard</a></span>
+        </div>
+        <div class="cline">
+          <span class="k">Based in</span>
+          <span class="v">Pune, India &middot; working worldwide</span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Tejaanshu Khardekar &middot; AI Product Leadership &amp; Readiness &middot; Pune, India</p>
+  </footer>
+
+</div>
+
+<script>
+  document.querySelectorAll('.copy').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      var text = btn.getAttribute('data-copy');
+      var flip = function () {
+        var old = btn.textContent;
+        btn.textContent = 'Copied';
+        setTimeout(function () { btn.textContent = old; }, 1400);
+      };
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(text).then(flip).catch(function () {
+          try {
+            var span = btn.previousElementSibling;
+            var r = document.createRange(); r.selectNodeContents(span);
+            var s = window.getSelection(); s.removeAllRanges(); s.addRange(r);
+          } catch (e) {}
+          flip();
+        });
+      } else { flip(); }
+    });
+  });
+</script>
+</body>
+</html>
