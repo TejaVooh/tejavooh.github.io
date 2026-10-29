@@ -206,7 +206,13 @@
   .svc-item h3 { font-size: 17.5px; font-weight: 600; color: var(--ink); margin: 0 0 7px; letter-spacing: -0.005em; }
   .svc-item p { margin: 0; font-size: 16px; line-height: 1.5; color: var(--ink-soft); }
   .svc-item p b { color: var(--ink); font-weight: 600; }
-
+  .h2-sub { margin-top: 44px; }
+  .svc-sec { display: grid; gap: 14px; }
+  .sec-item { display: grid; grid-template-columns: 290px 1fr; gap: 18px; align-items: baseline; padding-bottom: 13px; border-bottom: 1px solid var(--line); }
+  .sec-item:last-child { border-bottom: none; padding-bottom: 0; }
+  .sec-item .n { font-weight: 600; font-size: 16.5px; color: var(--ink); }
+  .sec-item .d { font-size: 15.5px; color: var(--ink-soft); line-height: 1.5; }
+  @media (max-width: 600px) { .sec-item { grid-template-columns: 1fr; gap: 4px; } }
   /* Engagements */
   .eng { display: grid; gap: 16px; }
   .eng-item { display: grid; grid-template-columns: 190px 1fr; gap: 18px; align-items: baseline; padding-bottom: 16px; border-bottom: 1px solid var(--line); }
@@ -263,7 +269,7 @@
     <nav class="nav">
       <span class="brand">Tejaanshu Khardekar</span>
       <span class="nav-right">
-        <a href="#services">Where deals stall</a>
+                <a href="#services">What I do</a>
         <a href="#about">About</a>
         <a href="#contact" class="cta">Work with me</a>
       </span>
@@ -272,7 +278,7 @@
 
   <main>
     <div class="hero">
-      <p class="eyebrow">Enterprise AI diligence &amp; readiness</p>
+            <p class="eyebrow">AI evaluation, audit &amp; security</p>
       <h1>You win the demo. Then the deal <em>goes quiet</em>.</h1>
       <p class="lede">I find out why serious buyers stall after the demo, and I fix it.</p>
       <div class="actions">
@@ -281,40 +287,45 @@
       </div>
     </div>
 
-    <section id="services">
-      <h2>Where deals actually stall.</h2>
+     <section id="services">
+      <h2>Core practice.</h2>
       <div class="svc">
 
         <div class="svc-item">
-          <h3>The deal that went quiet</h3>
-          <p>One stalled opportunity, examined end to end. A vendor security review blocking the contract, an enterprise architecture review nobody briefed you on, a questionnaire sitting in a queue. Where it stopped, who stopped it, and the question that did it. <b>Rarely the one you assumed.</b></p>
+          <h3>AI evaluation and proof</h3>
+          <p>On-device. Guardrails on every call. Continuous evaluation. Replayable audit trail. Each is something someone will eventually ask you to evidence. I build the evaluation that answers it on your use case and your data, and map every statement to the artifact behind it, the check that re-derives it, and <b>the date it was last true</b>.</p>
         </div>
 
         <div class="svc-item">
-          <h3>The next ten deals</h3>
-          <p>Then the same work moves upstream, so the questions are answered before they are asked. Most companies lose the same deal repeatedly <b>without recognising it is the same deal</b>.</p>
+          <h3>AI audit and governance</h3>
+          <p>Compliant, documented and provable. I read your product against DPDP, GDPR, ISO/IEC 42001 and EU AI Act technical documentation as an auditor will, and resolve data residency and retention questions so a regulated buyer can be shown <b>evidence rather than assurances</b>.</p>
         </div>
 
         <div class="svc-item">
-          <h3>Regulated-buyer readiness</h3>
-          <p>Banks, hospitals and insurers approve the demo and then go quiet. Their auditor is the real buyer, and nobody sold to them. I read your product against DPDP, GDPR, ISO 42001 and EU AI Act technical documentation as that auditor will, and resolve data residency questions <b>before the deal stalls</b>.</p>
+          <h3>AI security review</h3>
+          <p>What actually leaves your system, where it goes, what is exposed, and whether your documentation and your binary say the same thing. I read the product the way a buyer's security team will, <b>before they do</b>.</p>
         </div>
 
-        <div class="svc-item">
-          <h3>Security questionnaires &amp; vendor assessments</h3>
-          <p>A two-hundred-question security pack has landed and it is blocking the contract. TPRM, CAIQ, SIG Lite, a bespoke bank questionnaire, or a third party risk assessment of you as an AI vendor. Most people can complete the form. I complete it <b>and close the gaps behind it</b>, because I read the backend first.</p>
-        </div>
+      </div>
 
-        <div class="svc-item">
-          <h3>Claims &amp; proof</h3>
-          <p>On-device. Guardrails on every call. Continuous evaluation. Replayable audit trail. Each is a claim someone will eventually ask you to evidence. I map every claim, in your model cards and your documentation, to the artifact behind it, the check that re-derives it, and <b>the date it was last true</b>.</p>
+      <h2 class="h2-sub">Where it leads.</h2>
+      <div class="svc-sec">
+        <div class="sec-item">
+          <span class="n">The deal that went quiet</span>
+          <span class="d">One stalled opportunity examined end to end. Where it stopped, who stopped it, and the question that did it. Rarely the one you assumed.</span>
         </div>
-
-        <div class="svc-item">
-          <h3>AI unit economics &amp; cost-to-serve</h3>
-          <p>Your buyer asks what this costs at scale. So does your investor, with a different motive. I model your real cost per outcome and whether the stack you chose <b>survives the volume you are promising</b>.</p>
+        <div class="sec-item">
+          <span class="n">The next ten deals</span>
+          <span class="d">The same work moved upstream, so the questions are answered before they are asked. Most companies lose the same deal repeatedly without recognising it is the same deal.</span>
         </div>
-
+        <div class="sec-item">
+          <span class="n">Security questionnaires and vendor assessments</span>
+          <span class="d">TPRM, CAIQ, SIG Lite or a bespoke bank pack. Most people can complete the form. I complete it and close the gaps behind it.</span>
+        </div>
+        <div class="sec-item">
+          <span class="n">AI unit economics and cost-to-serve</span>
+          <span class="d">What it really costs per outcome, and whether the stack you chose survives the volume you are promising.</span>
+        </div>
       </div>
     </section>
 
