@@ -10,14 +10,12 @@
 <link rel="canonical" href="https://www.tejanshu.com/">
 <meta name="robots" content="index, follow, max-image-preview:large">
 
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://www.tejanshu.com/">
-<meta property="og:title" content="Why AI deals stall in technical diligence | Tejaanshu Khardekar">
-<meta property="og:description" content="Enterprise buyers, auditors and investors will open your AI product and read it closely. I do it first, and tell you what they will find.">
+<<meta property="og:title" content="AI evaluation, governance and security | Tejaanshu Khardekar">
+<meta property="og:description" content="Sooner or later someone opens your AI product. A buyer's security team, an auditor, an investor. I do it first, and tell you what they will find.">
 <meta property="og:site_name" content="Tejaanshu Khardekar">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Why AI deals stall in technical diligence | Tejaanshu Khardekar">
-<meta name="twitter:description" content="Enterprise buyers, auditors and investors will open your AI product. I do it first, and tell you what they will find.">
+<meta name="twitter:title" content="AI evaluation, governance and security | Tejaanshu Khardekar">
+<meta name="twitter:description" content="Sooner or later someone opens your AI product. I do it first, and tell you what they will find.">
 <link rel="icon" href="images/favicon.ico">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&family=Inter:wght@400;500;600&display=swap">
@@ -26,36 +24,43 @@
 {
   "@context": "https://schema.org",
   "@type": "ProfessionalService",
-  "name": "Tejaanshu Khardekar | AI Product Diligence and Readiness",
-  "description": "Independent consulting for AI and platform companies whose enterprise deals stall after the demo: diligence failure analysis, diligence readiness, regulated-buyer readiness, security questionnaire and vendor assessment response, claims and proof, AI unit economics.",
-  "url": "https://www.tejanshu.com/",
+    "name": "Tejaanshu Khardekar | AI Evaluation, Governance and Security",
+  "description": "Independent consulting for AI and platform companies: evaluation that proves the product does what it claims, governance documentation a regulated buyer will accept, and security review before someone else performs it. Evaluation harnesses, EU AI Act and ISO 42001 readiness, security questionnaire and vendor assessment response, AI unit economics.",
   "areaServed": ["India", "United States", "United Kingdom", "European Union", "Worldwide"],
-  "serviceType": ["AI product due diligence", "Third party risk assessment response", "AI governance consulting", "Fractional CPO"],
-  "founder": {
+   "serviceType": ["AI evaluation", "AI governance consulting", "AI security review", "AI product due diligence", "Third party risk assessment response", "Fractional CPO"],
     "@type": "Person",
     "name": "Tejaanshu Khardekar",
-    "jobTitle": "AI Product Diligence and Readiness Consultant",
+       "jobTitle": "AI Evaluation, Governance and Security Consultant",
     "sameAs": "https://www.linkedin.com/in/tkhard/",
     "knowsAbout": [
-      "AI product due diligence",
-      "Technical due diligence",
+            "AI evaluation",
+      "Model evaluation",
+      "RAG evaluation",
+      "LLM evaluation and benchmarking",
+      "Evaluation harness and regression testing",
+      "Red teaming and adversarial testing",
+      "Hallucination and faithfulness measurement",
+      "Model cards and claims evidence",
+      "AI governance",
+      "EU AI Act technical documentation",
+      "DPDP Act compliance",
+      "ISO/IEC 42001",
+      "ISO/IEC 22989",
+      "NIST AI Risk Management Framework",
+      "Data residency and sovereignty",
+      "AI security review",
       "Third party risk assessment for AI vendors",
       "TPRM questionnaire response",
       "CAIQ response",
       "SIG Lite completion",
       "Enterprise security questionnaires",
       "Vendor security review",
-      "AI governance",
-      "EU AI Act technical documentation",
-      "DPDP Act compliance",
-      "ISO/IEC 42001",
-      "ISO/IEC 22989",
-      "Data residency and sovereignty",
-      "Model cards and claims evidence",
-      "Enterprise architecture review",
-      "PKI and certificate lifecycle",
-      "RAG and agent platforms",
       "API security",
+      "PKI and certificate lifecycle",
+      "AI product due diligence",
+      "Technical due diligence",
+      "Enterprise architecture review",
+      "RAG and agent platforms",
       "Capital markets and fintech platforms"
     ]
   },
@@ -236,7 +241,14 @@
   .bio p { max-width: 62ch; color: var(--ink-soft); margin: 0 0 14px; }
   .bio p b { color: var(--ink); font-weight: 600; }
   .proof { margin: 0; padding: 15px 19px; background: var(--accent-wash); border-radius: 8px; font-size: 15.5px; color: var(--accent-ink); }
-
+  /* Coverage tags */
+  .tags { display: flex; flex-wrap: wrap; gap: 8px; }
+  .tag {
+    font-size: 13.5px; line-height: 1.3; color: var(--ink-soft);
+    background: var(--card); border: 1px solid var(--line);
+    border-radius: 100px; padding: 5px 12px; white-space: nowrap;
+  }
+  @media (max-width: 560px) { .tag { font-size: 13px; padding: 4px 10px; } }
   /* Contact */
   .contact-cta { display: flex; gap: 14px; flex-wrap: wrap; margin: 0 0 30px; }
   .referral { font-size: 16px; color: var(--ink-soft); max-width: 54ch; margin: 0 0 28px; }
@@ -271,6 +283,7 @@
               <a href="#founders">For founders &amp; CXOs</a>
                 <a href="#engagements">Engagements</a>  
         <a href="#services">Services</a>
+         <a href="#coverage">Coverage</a>
         <a href="#contact" class="cta">Work with me</a>
       </span>
     </nav>
@@ -279,8 +292,8 @@
   <main>
     <div class="hero">
             <p class="eyebrow">AI evaluation, audit &amp; security</p>
-      <h1>You win the demo. Then the deal <em>goes quiet</em>.</h1>
-      <p class="lede">I find out why serious buyers stall after the demo, and I fix it.</p>
+                 <h1>Sooner or later, someone <em>opens your AI product</em>.</h1>
+      <p class="lede">A buyer's security team, an auditor, an investor. I do it first, and tell you what they will find.</p>
       <div class="actions">
         <a href="https://cal.com/tejaanshu/discovery" class="btn">Book a first conversation</a>
                 <a href="#services" class="btn-ghost">How I work</a>
@@ -296,24 +309,24 @@
       </div>
     </section>
      <section id="services">
-            <h2>Practice.</h2>
+          <h2>Practice.</h2>
+      <p class="referral">18 years building enterprise platforms, now applied to proving AI systems do what they claim.</p>
       <div class="svc">
 
-        <div class="svc-item">
-          <h3>AI evaluation and proof</h3>
-          <p>On-device. Guardrails on every call. Continuous evaluation. Replayable audit trail. Each is something someone will eventually ask you to evidence. I build the evaluation that answers it on your use case and your data, and map every statement to the artifact behind it, the check that re-derives it, and <b>the date it was last true</b>.</p>
+                <div class="svc-item">
+          <h3>AI evaluation</h3>
+          <p>Does it work, measured against what, and can you show the run that proved it. Capability and safety evaluation built on your use case and your data, wired into the release so it runs again, with every number traced to the artifact behind it and <b>the date it was last true</b>.</p>
         </div>
 
         <div class="svc-item">
-          <h3>AI audit and governance</h3>
-          <p>Compliant, documented and provable. I read your product against DPDP, GDPR, ISO/IEC 42001 and EU AI Act technical documentation as an auditor will, and resolve data residency and retention questions so a regulated buyer can be shown <b>evidence rather than assurances</b>.</p>
+          <h3>AI governance</h3>
+          <p>What you are required to document, and the evidence an auditor will ask for. DPDP, GDPR, ISO/IEC 42001 and EU AI Act technical documentation, with data residency and retention resolved so a regulated buyer is shown <b>evidence rather than assurances</b>.</p>
         </div>
 
         <div class="svc-item">
-          <h3>AI security review</h3>
-          <p>What actually leaves your system, where it goes, what is exposed, and whether your documentation and your binary say the same thing. I read the product the way a buyer's security team will, <b>before they do</b>.</p>
+          <h3>AI security</h3>
+          <p>What actually leaves your system, where it goes, what is exposed, and whether your documentation and your build say the same thing. I read the product the way a buyer's security team will, <b>before they do</b>.</p>
         </div>
-
       </div>
 
            <h2 class="h2-sub">Applications.</h2>
@@ -379,6 +392,42 @@
         <p>Most people who sell positioning have never opened a backend. Most who can read a backend cannot talk go-to-market. I work in the overlap: I have <b>built the platforms</b>, <b>owned the positioning</b>, and read AI products the way their hardest buyer will.</p>
         <p>I work as an independent AI due diligence and AI governance consultant from Pune, with clients across India, the US and Europe. Engagements run from a single diligence review to fractional CPO work across a quarter.</p>
         
+      </div>
+    </section>
+
+        <section id="coverage">
+      <h2>Coverage.</h2>
+      <p class="referral">What I am usually brought in on.</p>
+      <div class="tags">
+        <span class="tag">AI evaluation</span>
+        <span class="tag">Model evaluation</span>
+        <span class="tag">RAG evaluation</span>
+        <span class="tag">LLM evaluation and benchmarking</span>
+        <span class="tag">Evaluation harness and regression testing</span>
+        <span class="tag">Red teaming and adversarial testing</span>
+        <span class="tag">Hallucination and faithfulness measurement</span>
+        <span class="tag">Model cards and claims evidence</span>
+        <span class="tag">AI governance</span>
+        <span class="tag">EU AI Act technical documentation</span>
+        <span class="tag">DPDP Act compliance</span>
+        <span class="tag">ISO/IEC 42001</span>
+        <span class="tag">ISO/IEC 22989</span>
+        <span class="tag">NIST AI Risk Management Framework</span>
+        <span class="tag">Data residency and sovereignty</span>
+        <span class="tag">AI security review</span>
+        <span class="tag">Third party risk assessment</span>
+        <span class="tag">TPRM questionnaire response</span>
+        <span class="tag">CAIQ</span>
+        <span class="tag">SIG Lite</span>
+        <span class="tag">Enterprise security questionnaires</span>
+        <span class="tag">Vendor security review</span>
+        <span class="tag">API security</span>
+        <span class="tag">PKI and certificate lifecycle</span>
+        <span class="tag">AI product due diligence</span>
+        <span class="tag">Technical due diligence</span>
+        <span class="tag">Enterprise architecture review</span>
+        <span class="tag">RAG and agent platforms</span>
+        <span class="tag">Capital markets and fintech</span>
       </div>
     </section>
 
