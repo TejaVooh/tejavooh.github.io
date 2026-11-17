@@ -747,6 +747,25 @@ button:focus-visible {
     transition: none;
   }
 }
+
+/* Compact overview stats */
+
+#overview .stats {
+  margin-bottom: 18px !important;
+}
+
+#overview .stat {
+  padding: 12px 16px;
+}
+
+#overview .stat .big {
+  font-size: 20px;
+}
+
+#overview .stat .lab {
+  font-size: 12.5px;
+  margin-top: 4px;
+}
 </style>
 </head>
 
@@ -803,12 +822,12 @@ button:focus-visible {
   </div>
 
 
-  <!-- Summary -->
+   <!-- Overview -->
 
-  <section id="summary">
-    <h2>Summary</h2>
+  <section id="overview">
+    <h2>Overview</h2>
 
-    <div class="stats">
+    <div class="stats" style="margin-bottom: 24px;">
 
       <div class="stat">
         <div class="big">12</div>
@@ -823,6 +842,35 @@ button:focus-visible {
       <div class="stat">
         <div class="big">3</div>
         <div class="lab">Audiences: startups, founders, enterprises</div>
+      </div>
+
+    </div>
+
+    <div class="clines">
+
+      <div class="cline">
+        <span class="k">Scope</span>
+        <span class="v">AI strategy, product build, platform engineering, governance.</span>
+      </div>
+
+      <div class="cline">
+        <span class="k">Build</span>
+        <span class="v">RAG, GraphRAG, agentic workflows, MCP, fine-tuning.</span>
+      </div>
+
+      <div class="cline">
+        <span class="k">Platform</span>
+        <span class="v">LLM gateways, self-hosted inference, LLMOps, observability.</span>
+      </div>
+
+      <div class="cline">
+        <span class="k">Assurance</span>
+        <span class="v">Evaluation, red teaming, guardrails, EU AI Act, ISO/IEC 42001.</span>
+      </div>
+
+      <div class="cline">
+        <span class="k">Delivery</span>
+        <span class="v">Assessment, MVP to production, fractional Head of AI.</span>
       </div>
 
     </div>
