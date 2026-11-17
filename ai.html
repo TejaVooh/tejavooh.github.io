@@ -1,0 +1,1275 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+
+<title>AI Services: RAG, Agents, LLM Platforms, Governance | Tejaanshu Khardekar</title>
+<meta name="description" content="AI services for startups, founders and enterprises. AI strategy, RAG, agentic systems, LLM engineering, AI platforms, evaluation, security, governance and AI due diligence.">
+<meta name="author" content="Tejaanshu Khardekar">
+<meta name="keywords" content="AI services, AI consultant, fractional head of AI, AI CTO, RAG, retrieval-augmented generation, GraphRAG, agentic AI, AI agents, MCP, LLM engineering, fine-tuning, LLMOps, AI platform, AI evaluation, AI security, prompt injection, AI governance, EU AI Act, ISO 42001, AI due diligence">
+
+<link rel="canonical" href="https://www.tejanshu.com/ai-services.html">
+<meta name="robots" content="index, follow, max-image-preview:large">
+
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://www.tejanshu.com/ai-services.html">
+<meta property="og:title" content="AI Services | Tejaanshu Khardekar">
+<meta property="og:description" content="AI strategy to production. RAG, agents, LLM platforms, evaluation, security, governance.">
+<meta property="og:site_name" content="Tejaanshu Khardekar">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="AI Services | Tejaanshu Khardekar">
+<meta name="twitter:description" content="AI strategy to production. RAG, agents, LLM platforms, evaluation, security, governance.">
+
+<link rel="icon" href="images/favicon.ico">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&family=Inter:wght@400;500;600&display=swap">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "AI Services | Tejaanshu Khardekar",
+  "url": "https://www.tejanshu.com/ai-services.html",
+  "email": "tejaanshukhardekar@gmail.com",
+  "provider": {
+    "@type": "Person",
+    "name": "Tejaanshu Khardekar",
+    "url": "https://www.tejanshu.com/",
+    "sameAs": "https://www.linkedin.com/in/tkhard/"
+  },
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Pune",
+    "addressCountry": "IN"
+  },
+  "areaServed": ["India", "Gulf Cooperation Council", "United Kingdom"],
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "AI Services",
+    "itemListElement": [
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "AI Strategy & Readiness" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "AI Product Development" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "RAG & Knowledge Systems" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Agentic Systems & Orchestration" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "LLM Engineering & Optimisation" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "AI Platform & Infrastructure" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "AI Evaluation & Quality Assurance" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "AI Security & Guardrails" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "AI Governance, Risk & Compliance" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "AI Technical Due Diligence" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Data Foundations for AI" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "AI Enablement & Team Building" } }
+    ]
+  }
+}
+</script>
+
+<style>
+:root {
+  --paper: #f6f4ef;
+  --card: #fffefb;
+  --ink: #1c1d1a;
+  --ink-soft: #52544e;
+  --ink-faint: #8b8d84;
+  --line: #e2ded4;
+  --accent: #0f5c54;
+  --accent-ink: #0b463f;
+  --accent-wash: #e9f0ee;
+  --display: "Newsreader", Georgia, "Times New Roman", serif;
+  --body: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  color-scheme: light;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 72px;
+}
+
+body {
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--body);
+  font-size: 17px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  margin: 0;
+}
+
+.wrap {
+  max-width: 760px;
+  margin: 0 auto;
+  padding-left: max(22px, env(safe-area-inset-left, 0px));
+  padding-right: max(22px, env(safe-area-inset-right, 0px));
+}
+
+/* Navigation */
+
+header {
+  padding-block: 22px;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.brand {
+  font-family: var(--display);
+  font-size: 19px;
+  font-weight: 500;
+  letter-spacing: -0.01em;
+  color: var(--ink);
+  text-decoration: none;
+}
+
+.nav-right {
+  display: flex;
+  gap: 19px;
+  align-items: baseline;
+  flex-wrap: wrap;
+}
+
+.nav a {
+  font-size: 14px;
+  color: var(--ink-soft);
+  text-decoration: none;
+}
+
+.nav a:hover {
+  color: var(--accent);
+}
+
+.nav a[aria-current="page"] {
+  color: var(--ink);
+  font-weight: 600;
+}
+
+.nav a.cta {
+  color: var(--accent);
+  font-weight: 600;
+}
+
+/* Hero */
+
+.hero {
+  padding-block: 48px 42px;
+}
+
+.eyebrow {
+  font-size: 14px;
+  color: var(--accent);
+  font-weight: 600;
+  margin: 0 0 18px;
+}
+
+h1 {
+  font-family: var(--display);
+  font-weight: 400;
+  font-size: clamp(30px, 5.8vw, 46px);
+  line-height: 1.12;
+  letter-spacing: -0.02em;
+  text-wrap: balance;
+  margin: 0 0 20px;
+}
+
+h1 em {
+  font-style: italic;
+  color: var(--accent);
+}
+
+.lede {
+  font-size: 19px;
+  line-height: 1.55;
+  color: var(--ink-soft);
+  max-width: 58ch;
+  margin: 0 0 18px;
+}
+
+.location-line {
+  font-size: 14.5px;
+  color: var(--ink-faint);
+  margin: 0 0 26px;
+}
+
+.actions {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.btn {
+  display: inline-block;
+  background: var(--accent);
+  color: #fff;
+  font-size: 15.5px;
+  font-weight: 600;
+  text-decoration: none;
+  padding: 12px 22px;
+  border-radius: 6px;
+}
+
+.btn:hover {
+  background: var(--accent-ink);
+}
+
+.btn-ghost {
+  display: inline-block;
+  background: transparent;
+  color: var(--accent);
+  font-size: 15.5px;
+  font-weight: 600;
+  text-decoration: none;
+  padding: 11px 21px;
+  border-radius: 6px;
+  border: 1px solid var(--accent);
+}
+
+.btn-ghost:hover {
+  background: var(--accent-wash);
+}
+
+/* Sections */
+
+section {
+  padding-block: 42px;
+  border-top: 1px solid var(--line);
+}
+
+h2 {
+  font-family: var(--display);
+  font-weight: 400;
+  font-size: clamp(23px, 4vw, 29px);
+  line-height: 1.2;
+  letter-spacing: -0.015em;
+  text-wrap: balance;
+  margin: 0 0 24px;
+}
+
+.referral {
+  font-size: 16px;
+  color: var(--ink-soft);
+  max-width: 58ch;
+  margin: 0 0 26px;
+}
+
+/* Stats */
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1px;
+  background: var(--line);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.stat {
+  background: var(--card);
+  padding: 22px 18px;
+}
+
+.stat .big {
+  font-family: var(--display);
+  font-size: 30px;
+  line-height: 1;
+  letter-spacing: -0.01em;
+  font-variant-numeric: tabular-nums;
+}
+
+.stat .lab {
+  font-size: 13.5px;
+  color: var(--ink-faint);
+  margin-top: 8px;
+  line-height: 1.4;
+}
+
+/* Index tags */
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.tag {
+  font-size: 13.5px;
+  line-height: 1.3;
+  color: var(--ink-soft);
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 100px;
+  padding: 5px 12px;
+  white-space: nowrap;
+  text-decoration: none;
+}
+
+a.tag:hover {
+  color: var(--accent);
+  border-color: var(--accent);
+}
+
+.svc-tools {
+  display: flex;
+  justify-content: flex-end;
+  margin: 22px 0 12px;
+}
+
+.mini {
+  font-family: var(--body);
+  font-size: 12.5px;
+  color: var(--ink-soft);
+  background: transparent;
+  border: 1px solid var(--line);
+  border-radius: 5px;
+  padding: 3px 9px;
+  cursor: pointer;
+}
+
+.mini:hover {
+  color: var(--accent);
+  border-color: var(--accent);
+}
+
+/* Collapsible services */
+
+.svc {
+  display: grid;
+  gap: 1px;
+  background: var(--line);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.svc-item {
+  background: var(--card);
+  padding: 0;
+}
+
+.svc-item summary {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 20px 24px;
+  cursor: pointer;
+  list-style: none;
+  user-select: none;
+}
+
+.svc-item summary::-webkit-details-marker {
+  display: none;
+}
+
+.svc-item summary h3 {
+  flex: 1;
+  font-size: 17.5px;
+  font-weight: 600;
+  color: var(--ink);
+  margin: 0;
+  letter-spacing: -0.005em;
+}
+
+.svc-item summary .cnt {
+  font-size: 13px;
+  color: var(--ink-faint);
+  font-variant-numeric: tabular-nums;
+}
+
+.svc-item summary::after {
+  content: "";
+  flex: none;
+  width: 9px;
+  height: 9px;
+  margin-top: -4px;
+  border-right: 2px solid var(--accent);
+  border-bottom: 2px solid var(--accent);
+  transform: rotate(45deg);
+  transition: transform 0.2s;
+}
+
+.svc-item[open] summary::after {
+  margin-top: 4px;
+  transform: rotate(-135deg);
+}
+
+.svc-item summary:hover h3,
+.svc-item[open] summary h3 {
+  color: var(--accent);
+}
+
+.svc-item summary:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: -4px;
+  border-radius: 6px;
+}
+
+.svc-body {
+  padding: 0 24px 22px;
+}
+
+.svc-body ul {
+  margin: 0;
+  padding-left: 18px;
+  font-size: 15.5px;
+  line-height: 1.6;
+  color: var(--ink-soft);
+}
+
+@supports (interpolate-size: allow-keywords) {
+  :root {
+    interpolate-size: allow-keywords;
+  }
+
+  .svc-item::details-content {
+    block-size: 0;
+    overflow: hidden;
+    transition: block-size 0.25s ease, content-visibility 0.25s allow-discrete;
+  }
+
+  .svc-item[open]::details-content {
+    block-size: auto;
+  }
+}
+
+/* Audience fit table */
+
+.fit-wrap {
+  overflow-x: auto;
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+}
+
+.fit {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 15px;
+}
+
+.fit th,
+.fit td {
+  padding: 11px 14px;
+  border-bottom: 1px solid var(--line);
+  text-align: center;
+  white-space: nowrap;
+}
+
+.fit th:first-child,
+.fit td:first-child {
+  text-align: left;
+}
+
+.fit thead th {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--ink-faint);
+}
+
+.fit td {
+  color: var(--ink-soft);
+}
+
+.fit tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.fit .y {
+  color: var(--accent);
+  font-size: 13px;
+}
+
+/* Engagements */
+
+.eng {
+  display: grid;
+  gap: 16px;
+}
+
+.eng-item {
+  display: grid;
+  grid-template-columns: 210px 1fr;
+  gap: 18px;
+  align-items: baseline;
+  padding-bottom: 16px;
+  border-bottom: 1px solid var(--line);
+}
+
+.eng-item:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.eng-item .n {
+  font-weight: 600;
+  font-size: 16px;
+  color: var(--ink);
+}
+
+.eng-item .d {
+  font-size: 16px;
+  color: var(--ink-soft);
+  line-height: 1.5;
+}
+
+.proof {
+  margin: 20px 0 0;
+  padding: 15px 19px;
+  background: var(--accent-wash);
+  border-radius: 8px;
+  font-size: 15px;
+  color: var(--accent-ink);
+}
+
+.proof ul {
+  margin: 0;
+  padding-left: 18px;
+}
+
+/* Contact */
+
+.contact-cta {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+  margin: 0 0 26px;
+}
+
+.clines {
+  display: grid;
+}
+
+.cline {
+  display: grid;
+  grid-template-columns: 96px 1fr;
+  gap: 16px;
+  padding: 13px 0;
+  border-top: 1px solid var(--line);
+  align-items: baseline;
+}
+
+.cline:last-child {
+  border-bottom: 1px solid var(--line);
+}
+
+.cline .k {
+  font-size: 13px;
+  color: var(--ink-faint);
+  font-weight: 600;
+}
+
+.cline .v {
+  font-size: 16px;
+  word-break: break-word;
+}
+
+.cline a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.cline a:hover {
+  text-decoration: underline;
+}
+
+.copyrow {
+  display: inline-flex;
+  gap: 10px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.copy {
+  font-family: var(--body);
+  font-size: 12.5px;
+  color: var(--ink-soft);
+  background: transparent;
+  border: 1px solid var(--line);
+  border-radius: 5px;
+  padding: 3px 9px;
+  cursor: pointer;
+}
+
+.copy:hover {
+  color: var(--accent);
+  border-color: var(--accent);
+}
+
+/* Footer */
+
+footer {
+  padding-block: 24px 40px;
+  border-top: 1px solid var(--line);
+}
+
+footer p {
+  font-size: 13.5px;
+  color: var(--ink-faint);
+  margin: 0;
+}
+
+.flinks {
+  display: flex;
+  gap: 18px;
+  flex-wrap: wrap;
+  margin-bottom: 12px;
+}
+
+.flinks a {
+  font-size: 14px;
+  color: var(--ink-soft);
+  text-decoration: none;
+}
+
+.flinks a:hover {
+  color: var(--accent);
+}
+
+/* Back to top */
+
+.to-top {
+  position: fixed;
+  right: max(20px, env(safe-area-inset-right, 0px));
+  bottom: max(20px, env(safe-area-inset-bottom, 0px));
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--accent);
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  box-shadow: 0 4px 14px rgba(15, 92, 84, 0.25);
+  cursor: pointer;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(8px);
+  transition: opacity 0.2s, transform 0.2s, visibility 0.2s;
+  z-index: 50;
+}
+
+.to-top.show {
+  opacity: 1;
+  visibility: visible;
+  transform: none;
+}
+
+.to-top:hover {
+  background: var(--accent-ink);
+}
+
+/* Accessibility and responsive layout */
+
+a:focus-visible,
+button:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+  border-radius: 3px;
+}
+
+@media (min-width: 601px) {
+  header {
+    position: sticky;
+    top: 0;
+    z-index: 40;
+    padding-block: 14px;
+    background: rgba(246, 244, 239, 0.92);
+    -webkit-backdrop-filter: blur(8px);
+    backdrop-filter: blur(8px);
+    border-bottom: 1px solid var(--line);
+  }
+}
+
+@media (max-width: 700px) {
+  .nav {
+    align-items: flex-start;
+  }
+
+  .nav-right {
+    gap: 12px 16px;
+  }
+}
+
+@media (max-width: 600px) {
+  .eng-item {
+    grid-template-columns: 1fr;
+    gap: 5px;
+  }
+
+  .stats {
+    grid-template-columns: 1fr;
+  }
+
+  .tag {
+    font-size: 13px;
+    padding: 4px 10px;
+  }
+}
+
+@media (max-width: 420px) {
+  .nav {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .nav-right {
+    gap: 10px 14px;
+  }
+
+  .nav a {
+    font-size: 13px;
+  }
+
+  .cline {
+    grid-template-columns: 76px 1fr;
+    gap: 10px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  .svc-item::details-content,
+  .svc-item summary::after {
+    transition: none;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<button id="to-top" class="to-top" type="button" aria-label="Back to top">
+  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+       stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+    <path d="M12 19V5"></path>
+    <path d="M5 12l7-7 7 7"></path>
+  </svg>
+</button>
+
+<div class="wrap">
+
+<header>
+  <nav class="nav" aria-label="Main navigation">
+    <a class="brand" href="/">Tejaanshu Khardekar</a>
+
+    <span class="nav-right">
+      <a href="/#services">Services</a>
+      <a href="/ai-services.html" aria-current="page">AI Services</a>
+      <a href="/#founders">Founders</a>
+      <a href="/#investors">Investors</a>
+      <a href="/#engagements">Engagements</a>
+      <a href="/#experience">Experience</a>
+      <a href="#contact" class="cta">Contact</a>
+    </span>
+  </nav>
+</header>
+
+<main>
+
+  <!-- Hero -->
+
+  <div class="hero" id="top">
+    <p class="eyebrow">AI Services</p>
+
+    <h1>AI Strategy to <em>Production</em></h1>
+
+    <p class="lede">
+      Production AI for startups, founders and enterprises.
+      Strategy, build, evaluation, security, governance.
+    </p>
+
+    <p class="location-line">
+      Pune, India &middot; India, GCC, UK
+    </p>
+
+    <div class="actions">
+      <a href="https://cal.com/tejaanshu/discovery" class="btn">Schedule a Call</a>
+      <a href="#ai-services" class="btn-ghost">View Services</a>
+    </div>
+  </div>
+
+
+  <!-- Summary -->
+
+  <section id="summary">
+    <h2>Summary</h2>
+
+    <div class="stats">
+
+      <div class="stat">
+        <div class="big">12</div>
+        <div class="lab">Service areas</div>
+      </div>
+
+      <div class="stat">
+        <div class="big">71</div>
+        <div class="lab">AI services</div>
+      </div>
+
+      <div class="stat">
+        <div class="big">3</div>
+        <div class="lab">Audiences: startups, founders, enterprises</div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- Services -->
+
+  <section id="ai-services">
+    <h2>Services</h2>
+
+    <nav class="tags" aria-label="Service areas">
+      <a class="tag" href="#strategy">Strategy</a>
+      <a class="tag" href="#product">Product</a>
+      <a class="tag" href="#rag">RAG</a>
+      <a class="tag" href="#agents">Agents</a>
+      <a class="tag" href="#llm">LLM Engineering</a>
+      <a class="tag" href="#platform">Platform</a>
+      <a class="tag" href="#evaluation">Evaluation</a>
+      <a class="tag" href="#security">Security</a>
+      <a class="tag" href="#governance">Governance</a>
+      <a class="tag" href="#diligence">Due Diligence</a>
+      <a class="tag" href="#data">Data</a>
+      <a class="tag" href="#enablement">Enablement</a>
+    </nav>
+
+    <div class="svc-tools">
+      <button id="toggle-all" class="mini" type="button">Expand all</button>
+    </div>
+
+    <div class="svc">
+
+      <details class="svc-item" id="strategy">
+        <summary><h3>AI Strategy &amp; Readiness</h3><span class="cnt">6</span></summary>
+        <div class="svc-body">
+          <ul>
+            <li>AI opportunity assessment and use-case prioritisation</li>
+            <li>Build vs buy vs API decision framework</li>
+            <li>AI roadmap and investment sequencing</li>
+            <li>Model selection: proprietary vs open-weight</li>
+            <li>Unit economics: token cost, inference cost, margin impact</li>
+            <li>AI readiness audit: data, systems, skills, governance</li>
+          </ul>
+        </div>
+      </details>
+
+      <details class="svc-item" id="product">
+        <summary><h3>AI Product Development</h3><span class="cnt">6</span></summary>
+        <div class="svc-body">
+          <ul>
+            <li>AI MVP and proof of concept to production</li>
+            <li>Copilots and assistants, internal and customer-facing</li>
+            <li>Conversational AI: chat, voice (ASR, TTS)</li>
+            <li>Document AI: OCR, extraction, classification, summarisation</li>
+            <li>Text-to-SQL and natural language analytics</li>
+            <li>AI feature integration into existing SaaS products</li>
+          </ul>
+        </div>
+      </details>
+
+      <details class="svc-item" id="rag">
+        <summary><h3>RAG &amp; Knowledge Systems</h3><span class="cnt">7</span></summary>
+        <div class="svc-body">
+          <ul>
+            <li>Retrieval-augmented generation (RAG) design and build</li>
+            <li>Hybrid search: BM25 + dense vectors, reranking</li>
+            <li>Vector databases: pgvector, Qdrant, Weaviate, OpenSearch</li>
+            <li>Knowledge graphs and GraphRAG (Neo4j)</li>
+            <li>Document ingestion pipelines: chunking, parsing, metadata</li>
+            <li>Enterprise search modernisation: Elasticsearch to semantic retrieval</li>
+            <li>Context engineering and prompt management</li>
+          </ul>
+        </div>
+      </details>
+
+      <details class="svc-item" id="agents">
+        <summary><h3>Agentic Systems &amp; Orchestration</h3><span class="cnt">6</span></summary>
+        <div class="svc-body">
+          <ul>
+            <li>Agentic workflow design: single-agent and multi-agent</li>
+            <li>Tool use and function calling</li>
+            <li>MCP server development and integration</li>
+            <li>Orchestration frameworks: LangGraph, LlamaIndex</li>
+            <li>Human-in-the-loop approval flows</li>
+            <li>LLM workflow automation: back office, operations</li>
+          </ul>
+        </div>
+      </details>
+
+      <details class="svc-item" id="llm">
+        <summary><h3>LLM Engineering &amp; Optimisation</h3><span class="cnt">6</span></summary>
+        <div class="svc-body">
+          <ul>
+            <li>Prompt engineering and structured outputs</li>
+            <li>Fine-tuning: LoRA, QLoRA, instruction tuning</li>
+            <li>Distillation and small model deployment</li>
+            <li>Quantization: GGUF, AWQ</li>
+            <li>Latency optimisation and semantic caching</li>
+            <li>Inference cost reduction and model routing</li>
+          </ul>
+        </div>
+      </details>
+
+      <details class="svc-item" id="platform">
+        <summary><h3>AI Platform &amp; Infrastructure</h3><span class="cnt">6</span></summary>
+        <div class="svc-body">
+          <ul>
+            <li>Enterprise AI platform design</li>
+            <li>LLM gateway: LiteLLM, OpenRouter, Azure OpenAI, Bedrock, Vertex AI</li>
+            <li>Self-hosted inference: vLLM, Ollama, TGI</li>
+            <li>GPU sizing and capacity planning</li>
+            <li>LLMOps and MLOps pipelines, CI/CD for AI</li>
+            <li>Observability: Langfuse, LangSmith, Arize Phoenix</li>
+          </ul>
+        </div>
+      </details>
+
+      <details class="svc-item" id="evaluation">
+        <summary><h3>Evaluation &amp; Quality Assurance</h3><span class="cnt">6</span></summary>
+        <div class="svc-body">
+          <ul>
+            <li>Evaluation framework design: offline and online</li>
+            <li>RAG evaluation: faithfulness, relevance, recall (Ragas, DeepEval)</li>
+            <li>Golden datasets and regression test suites</li>
+            <li>LLM-as-judge pipelines</li>
+            <li>Hallucination detection and measurement</li>
+            <li>A/B testing and production quality monitoring</li>
+          </ul>
+        </div>
+      </details>
+
+      <details class="svc-item" id="security">
+        <summary><h3>AI Security &amp; Guardrails</h3><span class="cnt">6</span></summary>
+        <div class="svc-body">
+          <ul>
+            <li>AI threat modelling: OWASP Top 10 for LLMs</li>
+            <li>Prompt injection and jailbreak testing</li>
+            <li>Red teaming: promptfoo, Garak</li>
+            <li>Guardrails: NeMo Guardrails, Llama Guard</li>
+            <li>PII detection and redaction (Presidio)</li>
+            <li>Data leakage and access control for RAG</li>
+          </ul>
+        </div>
+      </details>
+
+      <details class="svc-item" id="governance">
+        <summary><h3>Governance, Risk &amp; Compliance</h3><span class="cnt">6</span></summary>
+        <div class="svc-body">
+          <ul>
+            <li>AI governance framework and policy</li>
+            <li>EU AI Act risk classification and readiness</li>
+            <li>ISO/IEC 42001 and NIST AI RMF alignment</li>
+            <li>DPDP Act 2023 and GDPR data handling</li>
+            <li>Model cards, audit trails, explainability records</li>
+            <li>Vendor and third-party AI risk assessment</li>
+          </ul>
+        </div>
+      </details>
+
+      <details class="svc-item" id="diligence">
+        <summary><h3>AI Technical Due Diligence</h3><span class="cnt">6</span></summary>
+        <div class="svc-body">
+          <ul>
+            <li>AI claims verification: proprietary model vs API wrapper</li>
+            <li>Architecture, data moat and defensibility review</li>
+            <li>Model dependency and vendor lock-in risk</li>
+            <li>Inference cost scalability review</li>
+            <li>IP, data licensing and training data provenance</li>
+            <li>AI team capability assessment</li>
+          </ul>
+        </div>
+      </details>
+
+      <details class="svc-item" id="data">
+        <summary><h3>Data Foundations for AI</h3><span class="cnt">5</span></summary>
+        <div class="svc-body">
+          <ul>
+            <li>Data readiness and quality assessment</li>
+            <li>AI data pipelines: ETL, embeddings, refresh</li>
+            <li>Unstructured data strategy</li>
+            <li>Synthetic data generation</li>
+            <li>Data labelling and annotation workflows</li>
+          </ul>
+        </div>
+      </details>
+
+      <details class="svc-item" id="enablement">
+        <summary><h3>Enablement &amp; Team Building</h3><span class="cnt">5</span></summary>
+        <div class="svc-body">
+          <ul>
+            <li>AI team structure and hiring plans</li>
+            <li>Fractional Head of AI / AI CTO</li>
+            <li>Engineering upskilling: RAG, agents, evaluation</li>
+            <li>AI centre of excellence setup</li>
+            <li>Executive AI briefings</li>
+          </ul>
+        </div>
+      </details>
+
+    </div>
+  </section>
+
+
+  <!-- Audience Fit -->
+
+  <section id="fit">
+    <h2>Audience Fit</h2>
+
+    <div class="fit-wrap">
+      <table class="fit">
+        <thead>
+          <tr>
+            <th scope="col">Service area</th>
+            <th scope="col">Startups</th>
+            <th scope="col">Founders</th>
+            <th scope="col">Enterprises</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Strategy &amp; Readiness</td><td><span class="y" aria-label="Yes">&#9679;</span></td><td><span class="y" aria-label="Yes">&#9679;</span></td><td><span class="y" aria-label="Yes">&#9679;</span></td></tr>
+          <tr><td>Product Development</td><td><span class="y" aria-label="Yes">&#9679;</span></td><td><span class="y" aria-label="Yes">&#9679;</span></td><td><span class="y" aria-label="Yes">&#9679;</span></td></tr>
+          <tr><td>RAG &amp; Knowledge Systems</td><td><span class="y" aria-label="Yes">&#9679;</span></td><td><span class="y" aria-label="Yes">&#9679;</span></td><td><span class="y" aria-label="Yes">&#9679;</span></td></tr>
+          <tr><td>Agentic Systems</td><td><span class="y" aria-label="Yes">&#9679;</span></td><td><span class="y" aria-label="Yes">&#9679;</span></td><td><span class="y" aria-label="Yes">&#9679;</span></td></tr>
+          <tr><td>LLM Engineering</td><td><span class="y" aria-label="Yes">&#9679;</span></td><td></td><td><span class="y" aria-label="Yes">&#9679;</span></td></tr>
+          <tr><td>Platform &amp; Infrastructure</td><td></td><td></td><td><span class="y" aria-label="Yes">&#9679;</span></td></tr>
+          <tr><td>Evaluation &amp; QA</td><td><span class="y" aria-label="Yes">&#9679;</span></td><td></td><td><span class="y" aria-label="Yes">&#9679;</span></td></tr>
+          <tr><td>Security &amp; Guardrails</td><td><span class="y" aria-label="Yes">&#9679;</span></td><td></td><td><span class="y" aria-label="Yes">&#9679;</span></td></tr>
+          <tr><td>Governance &amp; Compliance</td><td></td><td></td><td><span class="y" aria-label="Yes">&#9679;</span></td></tr>
+          <tr><td>Technical Due Diligence</td><td></td><td><span class="y" aria-label="Yes">&#9679;</span></td><td><span class="y" aria-label="Yes">&#9679;</span></td></tr>
+          <tr><td>Data Foundations</td><td></td><td></td><td><span class="y" aria-label="Yes">&#9679;</span></td></tr>
+          <tr><td>Enablement &amp; Team Building</td><td><span class="y" aria-label="Yes">&#9679;</span></td><td><span class="y" aria-label="Yes">&#9679;</span></td><td><span class="y" aria-label="Yes">&#9679;</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+
+  <!-- Engagements -->
+
+  <section id="engagements">
+    <h2>Engagements</h2>
+
+    <div class="eng">
+
+      <div class="eng-item">
+        <span class="n">AI Readiness Assessment</span>
+        <span class="d">Fixed scope. Use cases, data, systems, risk, roadmap.</span>
+      </div>
+
+      <div class="eng-item">
+        <span class="n">AI Build</span>
+        <span class="d">MVP to production. Design, engineering, evaluation, deployment.</span>
+      </div>
+
+      <div class="eng-item">
+        <span class="n">Fractional Head of AI</span>
+        <span class="d">Fixed term. AI strategy, team, delivery ownership.</span>
+      </div>
+
+      <div class="eng-item">
+        <span class="n">AI Advisory</span>
+        <span class="d">Model and vendor selection, design decisions, governance.</span>
+      </div>
+
+      <div class="eng-item">
+        <span class="n">AI Due Diligence</span>
+        <span class="d">For investors. AI claims, defensibility, cost, risk.</span>
+      </div>
+
+    </div>
+
+    <div class="proof">
+      <ul>
+        <li>Vendor-neutral. Tools listed are examples.</li>
+        <li>Compliance covers readiness and alignment. Certification is issued by accredited auditors.</li>
+        <li>Due diligence: one side per transaction.</li>
+      </ul>
+    </div>
+  </section>
+
+
+  <!-- Contact -->
+
+  <section id="contact">
+    <h2>Contact</h2>
+
+    <p class="referral">
+      AI strategy, builds, assessments and fractional leadership.
+      Include scope and target outcomes.
+    </p>
+
+    <div class="contact-cta">
+      <a href="https://cal.com/tejaanshu/discovery" class="btn">Schedule a Call</a>
+    </div>
+
+    <div class="clines">
+
+      <div class="cline">
+        <span class="k">Email</span>
+        <span class="v copyrow">
+          <span>tejaanshukhardekar@gmail.com</span>
+          <button class="copy" type="button"
+                  data-copy="tejaanshukhardekar@gmail.com">
+            Copy
+          </button>
+        </span>
+      </div>
+
+      <div class="cline">
+        <span class="k">LinkedIn</span>
+        <span class="v">
+          <a href="https://www.linkedin.com/in/tkhard/">linkedin.com/in/tkhard</a>
+        </span>
+      </div>
+
+      <div class="cline">
+        <span class="k">Location</span>
+        <span class="v">Pune, India &middot; Remote and on-site, international.</span>
+      </div>
+
+    </div>
+  </section>
+
+</main>
+
+<footer>
+
+  <div class="flinks">
+    <a href="/">Home</a>
+    <a href="/ai-services.html">AI Services</a>
+    <a href="/terms.html">Terms</a>
+    <a href="/privacy-policy.html">Privacy</a>
+    <a href="/refund-policy.html">Refund &amp; Cancellation</a>
+    <a href="/service-delivery.html">Service Delivery</a>
+    <a href="#contact">Contact</a>
+  </div>
+
+  <p>
+    &copy; <span id="yr">2026</span> Tejaanshu Khardekar
+    &middot; AI Services
+    &middot; Pune, India
+  </p>
+
+</footer>
+
+</div>
+
+<script>
+  // Copyright year.
+  var yrEl = document.getElementById("yr");
+
+  if (yrEl) {
+    yrEl.textContent = new Date().getFullYear();
+  }
+
+  // Back to top button.
+  (function () {
+    var btn = document.getElementById("to-top");
+    if (!btn) return;
+
+    var reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+    window.addEventListener("scroll", function () {
+      btn.classList.toggle("show", window.scrollY > 600);
+    }, { passive: true });
+
+    btn.addEventListener("click", function () {
+      window.scrollTo({ top: 0, behavior: reduce ? "auto" : "smooth" });
+    });
+  })();
+
+  // Expand all / collapse all, and open a section from a jump link.
+  (function () {
+    var items = document.querySelectorAll("details.svc-item");
+    var toggle = document.getElementById("toggle-all");
+
+    function syncToggle() {
+      var allOpen = Array.prototype.every.call(items, function (d) {
+        return d.open;
+      });
+      toggle.textContent = allOpen ? "Collapse all" : "Expand all";
+    }
+
+    if (toggle) {
+      toggle.addEventListener("click", function () {
+        var open = toggle.textContent === "Expand all";
+        items.forEach(function (d) {
+          d.open = open;
+        });
+        syncToggle();
+      });
+
+      items.forEach(function (d) {
+        d.addEventListener("toggle", syncToggle);
+      });
+    }
+
+    function openHash() {
+      var id = window.location.hash.slice(1);
+      if (!id) return;
+
+      var el = document.getElementById(id);
+      if (el && el.tagName === "DETAILS") {
+        el.open = true;
+      }
+    }
+
+    openHash();
+    window.addEventListener("hashchange", openHash);
+  })();
+
+  // Copy email address.
+  document.querySelectorAll(".copy").forEach(function (btn) {
+    btn.addEventListener("click", function () {
+      var text = btn.getAttribute("data-copy");
+
+      var flip = function () {
+        var old = btn.textContent;
+        btn.textContent = "Copied";
+
+        setTimeout(function () {
+          btn.textContent = old;
+        }, 1400);
+      };
+
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(text)
+          .then(flip)
+          .catch(function () {
+            try {
+              var span = btn.previousElementSibling;
+              var range = document.createRange();
+              range.selectNodeContents(span);
+
+              var selection = window.getSelection();
+              selection.removeAllRanges();
+              selection.addRange(range);
+            } catch (e) {}
+
+            flip();
+          });
+      } else {
+        flip();
+      }
+    });
+  });
+</script>
+
+</body>
+</html>
